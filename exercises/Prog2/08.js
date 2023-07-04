@@ -18,8 +18,8 @@ function setup() {
 function draw() {
     background(255);
 
-    let shape1 = Shape(50, 50, 30, 30);
-    let shape2 = Shape(30, 30, 20, 20);
+    let shape1 = new Shape(50, 50, 30, 30);
+    let shape2 = new Shape(30, 30, 20, 20);
 
     shape1.drawRect();
     shape2.drawRect();

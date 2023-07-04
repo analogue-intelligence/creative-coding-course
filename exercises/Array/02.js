@@ -10,8 +10,8 @@ function setup() {
 function draw() {
     background(255);
 
-    circle(xPos, yPos[0], radius);
-    circle(xPos, yPos[1], radius);
-    circle(xPos, yPos[2], radius);
+    ellipse(xPos, yPos[0], radius, radius);
+    ellipse(xPos, yPos[1], radius, radius);
+    ellipse(xPos, yPos[2], radius, radius);
 }
 

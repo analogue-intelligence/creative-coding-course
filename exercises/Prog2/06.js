@@ -14,6 +14,6 @@ function setup() {
 function draw() {
     background(255);
 
-    let shape = Shape(50, 50, 30, 30);
+    let shape = new Shape(50, 50, 30, 30);
 }
 

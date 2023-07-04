@@ -11,7 +11,7 @@ function draw() {
     background(255);
 
     for(let i = 0; i < yPos.length; i++){
-        circle(xPos, yPos[i], radius);
+        ellipse(xPos, yPos[i], radius, radius);
     }
 }
 
