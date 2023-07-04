@@ -5,7 +5,7 @@ let posX, posY, radius;
 let r, g, b;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(100, 100);
 }
 
 function draw() {
@@ -24,6 +24,6 @@ function draw() {
   
   // Create randomised circle
   fill(r, g, b);
-  circle(posX, posY, radius);
+  ellipse(posX, posY, radius, radius);
 
 }

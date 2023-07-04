@@ -3,7 +3,7 @@
 let x = 0; // Initial position
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(100, 100);
 }
 
 function draw() {

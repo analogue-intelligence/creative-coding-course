@@ -1,6 +1,6 @@
 let posX  = 50;
 let posY = 50;
-let radius = 0; 
+let radius = 30;
 
 function setup() {
     createCanvas(100,100);
@@ -9,8 +9,6 @@ function setup() {
 function draw() {
     background(255);
     
-    radius += 1;
-    
-    circle(posX, posY, radius);
+    ellipse(posX, posY, radius, radius);
 }
 

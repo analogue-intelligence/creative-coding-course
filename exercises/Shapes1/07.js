@@ -5,5 +5,5 @@ function setup() {
 
 function draw() {
     rectMode(CORNER)
-    rect(30, 30, 40, 40);
+    rect(30, 30, 40, 50);
 }

@@ -9,6 +9,6 @@ function setup() {
 function draw() {
     background(255);
     
-    circle(posX, posY, radius);
+    ellipse(posX, posY, radius, radius);
 }
 

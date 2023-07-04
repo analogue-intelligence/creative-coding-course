@@ -1,6 +1,6 @@
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(100, 100);
     smooth(); // This function is used to for anti-aliasing
     background(255); // Background is specified here so as to be able to draw on canvas
     

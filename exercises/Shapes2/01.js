@@ -7,10 +7,10 @@ function draw() {
 
     stroke(255);
     fill(0);
-    circle(30, 30, 30);
+    ellipse(30, 30, 30, 30);
   
     stroke(0);
     fill(255);
-    circle(70, 70, 30);
+    ellipse(70, 70, 30, 30);
 }
 

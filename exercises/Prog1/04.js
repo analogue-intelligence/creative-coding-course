@@ -1,17 +1,16 @@
 let posX  = width/2;
 let posY = height/2;
-let radius = 0;
+let radius = 10;
 
 function setup() {
     createCanvas(100,100);
-    let radius = 30;
 }
 
 function draw() {
     background(255);
     
-    radius = frameCount;
+    // radius = 10;
     
-    circle(posX, posY, radius);
+    ellipse(posX, posY, radius, radius);
 }
 
