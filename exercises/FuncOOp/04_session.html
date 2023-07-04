@@ -1,0 +1,97 @@
+<html>
+      <head>
+            <link rel="stylesheet" href="../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+      </head>
+      <body>
+            <h1>Summer school - Creative Coding</h1>
+            <h2>Exercises week 1</h2>
+            
+            <h2>Functions</h2>
+            <div>
+                  <h3>Creating a function</h3>
+                  <p>Create a function called 'drawEllipse' which takes as arguments, 'posX' - the x position of the circle
+                        'posY' - the y-position of the circle, 'w' - the width of the circle, 'l' - the length of the circle, 'r' - the red colour of the circle, 
+                        'b' - the blue colour of the circle, and 'g' - the green colour of the circle. Use the drawCircle function to create multiple different circles in the 'draw()' function. 
+                  </p>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+                  <p>Functions have two main properties - MODULARITY and REUSABILITY - here we can see how the function is reusable, as we can create multiple different circles using the same function</p>
+            </div>
+
+            <div>
+                  <h3>Function Return</h3>
+                  <p>Create a function called 'getArea' which takes as parameters 'w' for width and 'h' for height and return the product of the values - the area.</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Map function</h3>
+                  <p>We want the return values for the getArea function to be between the range 0 and 255, initially the range of the area function is between 0 - maxArea since that is the maximum area on screen. Modify the getArea function by adding another parameter called 'maxArea' which is the value of the width*height of the screen. 
+                        Use the 'map' function to change the range. 
+                  </p>
+                  <script type="text/p5" src="03.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Function Modularity</h3>
+                  <p>Use the 'drawEllipse' and 'getArea' function together now. We want to draw a rectangle and have the rectangle be a darker shade of blue depending on how small the area of the rectangle is. 
+                        To do this an ellipse can be defined as follows: drawRect(posX, posY, w, h, 0, 0, area(w, l, maxArea))
+                  </p>
+                  <script type="text/p5" src="03.js" data-autoplay></script>
+                  <p>This is an example of MODULARITY since we are using different functions to perform different tasks. The drawEllipse function helped in creating the ellipse, while the getArea function helped in getting the area without having to use more lines of code</p>
+            </div>
+
+            <div>
+                  <h3>Pass by Value</h3>
+                  <p></p>
+                  <script></script>
+            </div>
+
+            <div>
+                  <h3>Pass by Reference</h3>
+                  <p></p>
+                  <script></script>
+            </div>
+      
+            <h2>Object Oriented Programming</h2>
+
+            <div>
+                  <h3>Class Shape</h3>
+                  <p>Create a class called Shape, define a construtor which takes as parameters 'x', 'y', 'wid', 'len'</p>
+                  <script type="text/p5" src="06.js" data-autoplay></script>
+            </div>
+
+            <!-- You might be wondering what’s going on with the code inside the Circle constructor. What does this mean?
+
+When you’re inside a class, the this keyword refers to the current instance. Variables without a this. before them are either temporary “local” variables (like the arguments passed into the Circle constructor) or “global” variables (like the width and height variables). For example, look at a specific line:
+
+this.x = x;
+This line of code says “set this instance’s x variable to the value of the local variable named x“. -->
+
+            <div>
+                  <h3>Class object</h3>
+                  <p>Now after creating the class, we want to create multiple objects from this class. Create objects shape1 and shape2, of the class Shape and give them any values you want. 
+                        So essentially we created a variable which can hold multiple values, try creating a rectangle using each shape.
+                  </p>
+                  <script type="text/p5" src="07.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Class Method</h3>
+                  <p>There is an easier way to create a rectangle using a class, this is done by using methods. Methods are functions which are defined within a class. Create a method which is similar to the function to the drawRect function we created earlier within the class. 
+                        Then use the method to draw the a rectangle.
+                  </p>
+                  <script type="text/p5" src="08.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Class Mehtod 2</h3>
+                  <p>The class shape is very general, can we use it to create more types of shapes? Yes we can. 
+                        We can also create a method which creates an ellipse, call the method drawEllipse and define it similarly to the drawRect function.
+                  </p>
+                  <script type="text/p5" src="09.js" data-autoplay></script>
+                  <p>Here we have seen how powerful classes can be, they take a while to get used but imagine them as a very generalised data type which also have their own functions. Classes are used in situations when you want to create a generalised obejct with some properties such as a particle system or vectors.</p>
+            </div>
+      </body>
+</html>
