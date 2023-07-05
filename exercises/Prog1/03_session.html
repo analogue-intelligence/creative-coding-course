@@ -1,6 +1,6 @@
 <html>
       <head>
-            <link rel="stylesheet" href="../assets/main.css">
+            <link rel="stylesheet" href="../../assets/main.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
             <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
       </head>
@@ -8,94 +8,108 @@
             <h1>Summer school - Creative Coding</h1>
             <h2>Exercises week 1</h2>
             
-            <h2>Variables</h2>
+            <h2>3.1 Variables</h2>
             <div>
-                  <h3>Shapes and Variables</h3>
+                  <h3>3.1.1 Shapes and Variables</h3>
                   <p>Draw a circle such that the x-position, y-position and the radius are all defined using variables</p>
                   <script type="text/p5" src="01.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>Global/Local variables</h3>
-                  <p>Create a circle again using variables, however this time define the radius variable inside setup. 
-                        in another function. </p>
-                  <script type="text/p5" src="02.js" data-autoplay></script>
-                  <p>What happens? the radius variable is defined within another function and is said to be out of scope so it cannot be used </p>
+                  <h3>3.1.2 Constants</h3>
+                  <p>Draw a circle just as we did in the 3.1.1, however now set the radius as a constant. Try changing the value of radius after definition and see what happens.</p>
+                  <script type="text/p5" src="14.js" data-autoplay></script>
+                  <p>A constant is ... well constant, it cannot be redefined after initialisation.</p>
             </div>
 
             <div>
-                  <h3>Draw Loop</h3>
+                  <h3>3.1.3 Global/Local variables</h3>
+                  <p>Create a circle again using variables, however this time define the radius variable inside setup - in another function. </p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+                  <p>What happens? the radius variable is defined within another function and is said to be out of scope so it cannot be used. 
+                  Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally </p>
+            </div>
+
+            <!-- <div>
+                  <h3>Let vs Var</h3>
+                  <p>Similar to the previous exercise, define a circle again using variables</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div> -->
+
+            <div>
+                  <h3>3.1.4 Draw Loop</h3>
                   <p>Draw a circle using variables just as we did in the first exercise but with radius initialised as 0, however in this case increment the radius by 0.1 in the draw loop. What happens?</p>
                   <script type="text/p5" src="03.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>System Variable</h3>
+                  <h3>3.1.5 System Variable</h3>
                   <p>A system variable is a variable name which is predefined in the system, draw a shape using the system variables 'height', 'width' and 'frameCount'</p>
                   <script type="text/p5" src="04.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>Random</h3>
-                  <p>Draw a shape, with random size, position and colour. You can either create a variable for each random value globally, or you can create variables for each random value in teh draw function. What happens differently?
+                  <h3>3.1.6 Random</h3>
+                  <p>Draw a shape, with random size, position and colour. Make sure that the shape is drawn whenever the mouse is pressed. 
+                  Make sure to create variables for each random element of the shape. 
                   </p>
                   <script type="text/p5" src="05.js" data-autoplay></script>
             </div>
 
-            <h2>Conditionals</h2>
+            <h2>3.2 Conditionals</h2>
 
             <div>
-                  <h3>If</h3>
+                  <h3>3.2.1 If</h3>
                   <p>Draw the left side of the screen red whenever the mouse is on the left side of the screen</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>If-Else</h3>
+                  <h3>3.2.2 If-Else</h3>
                   <p>Do the same as above, however now when the mouse is on the top side of the screen draw the top side blue. </p>
                   <script type="text/p5" src="07.js" data-autoplay></script>
                   <p>What happens in this case? Does the program draw the left side or the top when on the top-right section of the screen
-                        To help visualise what is happening, try drawing two line which are in the center vertical and center horizontal. The priority of which conditional statement is dependant on the order of the conditionals. </p>
+                        To help visualise what is happening, try drawing two lines, one which goes through the horizontal center, while another which goes through the vertical center. The priority of which conditional statement is dependent on the order of the conditionals. </p>
             </div>
 
             <div>
-                  <h3>Else</h3>
+                  <h3>3.2.3 Else</h3>
                   <p>Do the same as above again, and now if the mouse is not on the left, and not at the top of the screen, then draw the bottom-right side of the screen green.</p>
                   <script type="text/p5" src="08.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>Nested If</h3>
+                  <h3>3.2.4 Nested If</h3>
                   <p>Using a nested if-statement, first check if the mouse is on the left side of the screen, and then check if the mouse is on the bottom side of the screen. If both conditions pass then colour the bottom-left part of the screen any colour. What do you think is the difference when both of the if-statements are not nested.</p>
                   <script type="text/p5" src="09.js" data-autoplay></script>
             </div>
             
             <div>
-                  <h3>Boolean Operations</h3>
+                  <h3>3.2.5 Boolean Operations</h3>
                   <p>Try to combine the two if-statements above using boolean operations (and, or, not). Also try to create more conditional statements with the boolean operations. </p>
                   <script type="text/p5" src="10.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>While loop</h3>
-                  <p>Using a while loop, draw lines across the screen. As a hint, define the spacing between the lines using a variable and also the condition in the while loop should include the total width oft he screen so as to know when to stop iterating. Continuously increment a variable with the spacing and draw a line up until the width of the screen has been reached</p>
+                  <h3>3.2.6 While loop</h3>
+                  <p>Using a while loop, draw lines across the screen. As a hint, define the spacing between the lines using a variable and also the condition in the while loop should include the total width of the screen so as to know when to stop iterating. Continuously increment a variable with the spacing and draw a line up until the width of the screen has been reached</p>
                   <script type="text/p5" src="11.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>For loop</h3>
-                  <p>Create the same program as the one above using a for loop</p>
+                  <h3>3.2.7 For loop</h3>
+                  <p>Create the same program as the one in 3.2.6 using a for loop</p>
                   <script type="text/p5" src="12.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>Grid</h3>
+                  <h3>3.2.8 Grid</h3>
                   <p>Create a grid using a nested for loop, to create the grid have the first for loop focus on the rows and the second for loop focus on the columns (or vice-versa) and then create a rectangle at each row-column index</p>
                   <script type="text/p5" src="13.js" data-autoplay></script>
             </div>
 
             <div>
-                  <h3>do-while vs while</h3>
+                  <h3>3.2.9 do-while vs while</h3>
             </div>
 
       </body>

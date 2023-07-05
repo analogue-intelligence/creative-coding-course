@@ -4,15 +4,8 @@
 let posX, posY, radius;
 let r, g, b;
 
-function setup() {
-  createCanvas(100, 100);
-}
-
-function draw() {
-  
-  // Try removing the background to see what happens
-  background(255);
-  
+// Every time the mouse is pressed a random circle is created
+function mousePressed(){
   // Randomise all of the properties of the circle, within the given ranges along with the colour of the circle
   posX = random(0, width);
   posY = random(0, height);
@@ -25,5 +18,13 @@ function draw() {
   // Create randomised circle
   fill(r, g, b);
   ellipse(posX, posY, radius, radius);
+}
+
+function setup() {
+  createCanvas(100, 100);
+  background(0); // Try moving the background to the draw() function, what happens?
+}
+
+function draw() {
 
 }

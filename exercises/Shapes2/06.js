@@ -3,15 +3,15 @@ function setup() {
 }
 
 function draw() {
-    background(255);
+    background(0);
   
-    fill(0, 0, 0, 20);
+    fill(255, 255, 255, 40);
     ellipse(20, 50, 25, 25);
     
-    fill(0, 0, 0, 140);
+    fill(255, 255, 255, 140);
     ellipse(50, 50, 25, 25);
     
-    fill(0, 0, 0, 255);
+    fill(255, 255, 255, 255);
     ellipse(80, 50, 25, 25);
 }
 
