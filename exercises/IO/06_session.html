@@ -1,0 +1,101 @@
+<html>
+      <head>
+            <link rel="stylesheet" href="../../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+      </head>
+      <body>
+            <h1>Summer school - Creative Coding</h1>
+            <h2>Exercises week 1</h2>
+            
+            <h2>6.1 Audio</h2>
+            <div>
+                  <h3>6.1.1 Play a Sound</h3>
+                  <p>Load and play a sound file in your sketch.</p>
+                  <script type="text/p5" src="06.js" data-autoplay></script>
+            </div>
+            
+            <div>
+                  <h3>6.1.2 Sound Visualization</h3>
+                  <p>Create an circle which is centered on the canvas, such that the radius of the circle changes between 10 - 200 as the amplitude of the sound changes </p>
+                  <script type="text/p5" src="07.js" data-autoplay></script>
+            </div>
+            
+            <div>
+                  <h3>6.1.3 Sound Effects</h3>
+                  <p>Apply reverb to the sound file, create a reverb object and set the reverb parameters to 3, 2. Then when the mouse is pressed add a reverb of 0.2 m and wehnt he mosue is released (using the mosuReleased()) function then remove the reverb.</p>
+                  <script type="text/p5" src="08.js" data-autoplay></script>
+            </div>
+            
+            <div>
+                  <h3>6.1.4 Sound Recording</h3>
+                  <p>Record audio using the microphone and save it as a sound file, create a visualisation similar ot what we did in 6.1.2. The recording is stopped/started whenever the user presses a keyboard button.</p>
+                  <script type="text/p5" src="09.js" data-autoplay></script>
+            </div>
+            
+            <div>
+                  <h3>6.1.5 Sound Synthesis</h3>
+                  <p>Generate sound using p5.js sound synthesis functions.
+                        <li>
+                              <item>Generate an oscillator object of type 'sine', frequency 440 and amplitude 0.5</item>
+                              <item>Whenever the mouse is pressed, the x coordinate of the mouse is mapped to a frequency range between 200, 2000 and the u coordinate is mapped to an amplitude of range between 0.2, 1. The osccilator is updated with the new freuqency and amplitude.</item>
+                              <item>When the mouse is released, the amplitude is set back to 0, 0.5</item>
+                        </li>
+                  </p>
+                  <script type="text/p5" src="10.js" data-autoplay></script>
+            </div>
+
+            <h2>Video</h2>
+            <div>
+                  <h3>Play a video</h3>
+                  <p>Play a video called 'test.mp4' on P5JS, and have the video loop infinitely.</p>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Play/Pause video</h3>
+                  <p> When the mouse is pressed the video is paused and if pressed again the video is played. Note that P%JS does not keep track of of the current time after pausing the video, you cna use the time function for this.</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Volume</h3>
+                  <p>Create a program which changes the volume of the video playing depending on where the mouse is moved. Note that volume() is a value between 0 (silent) and 1 (full volume)</p>
+                  <script type="text/p5" src="03.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Pixels</h3>
+                  <p>Change a video at every frame by using the pixel data. Here is an example code which use the pixel array to manipulate the colors of an image according to mouseX and mouseY position. Note how we access the R and B values of each pixel:</p>
+                  <script type="text/p5" src="04.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Recording videos</h3>
+                  <p>capture video from the user’s webcam and include it in the sketch</p>
+                  <script type="text/p5" src="05.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3></h3>
+                  <p></p>
+                  <!-- <script type="text/p5" src="01.js" data-autoplay></script> -->
+            </div>
+      
+            <h2>Title2</h2>
+
+            <div>
+                  <h3></h3>
+                  <p></p>
+                  <script></script>
+            </div>
+
+            <div>
+                  <h3></h3>
+                  <p></p>
+                  <script></script>
+            </div>
+           
+ 
+      </body>
+</html>
