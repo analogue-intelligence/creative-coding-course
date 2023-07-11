@@ -16,7 +16,7 @@ function setup() {
 
 //When mouse is pressed add reverb, and when the mouse is released remove the reverb
 function mousePressed() {
-  reverb.amp(0.2);
+  reverb.amp(10);
 }
 
 function mouseReleased() {

@@ -2,7 +2,7 @@ let video;
 let isPlaying = true;
 
 function setup() {
-  createCanvas(400, 300);
+  createCanvas(100, 100);
   
   // Create a video element and load the video file
   video = createVideo('test.mp4');

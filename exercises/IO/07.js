@@ -9,13 +9,15 @@ function preload() {
 function setup() {
   createCanvas(100, 100);
   sound.play();
+  amplitude = new p5.Amplitude(); // create an object which is used to obtain the amplitude
 }
 
 //Create a visual depending on the amplitude of the sound, as the sound gets higher, the ellipse gets larger
 function draw() {
-  let amplitude = sound.getLevel();
-  let ellipseSize = map(amplitude, 0, 1, 10, 200);
+  //Get the current amplitude level and mapt the value to a range between 10-100 to set as radius
+  let level = amplitude.getLevel();
+  let ellipseSize = map(level, 0, 1, 10, 100);
   
   background(0);
-  ellipse(width / 2, height / 2, ellipseSize, ellipseSize);
+  ellipse(width/2, height/2, ellipseSize);
 }

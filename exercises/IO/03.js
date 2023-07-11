@@ -1,7 +1,7 @@
 let video;
 
 function setup() {
-  createCanvas(400, 300);
+  createCanvas(100, 100);
   
   // Create a video element and load the video file
   video = createVideo('test.mp4');
@@ -15,10 +15,11 @@ function setup() {
 
 function draw() {
   // Map the mouse position to a volume value between 0 and 1
-  let volume = map(mouseX, 0, width, 0, 1);
-  
+  let v = map(mouseX, 0, width, 0, 1);
+  console.log(v);
+
   // Set the video volume
-  video.volume(volume);
+  video.volume(v);
 
   background(0);
   

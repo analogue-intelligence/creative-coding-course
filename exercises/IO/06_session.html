@@ -23,15 +23,19 @@
             
             <div>
                   <h3>6.1.3 Sound Effects</h3>
-                  <p>Apply reverb to the sound file, create a reverb object and set the reverb parameters to 3, 2. Then when the mouse is pressed add a reverb of 0.2 m and wehnt he mosue is released (using the mosuReleased()) function then remove the reverb.</p>
+                  <p>Apply reverb to the sound file, create a reverb object and set the reverb parameters to (<sound_variable>, 3, 2). 
+                     Whenever the mouse is pressed set the amplitude of the reverb to 10, and when the mouse is released 
+                        (using the mosuReleased() function) then set the amplitude of the reverb to 0. Note that one can chaneg the amplitude of a reverb object by doing reverb.amp(x) where x is the value of the amplitude.</p>
                   <script type="text/p5" src="08.js" data-autoplay></script>
             </div>
             
             <div>
                   <h3>6.1.4 Sound Recording</h3>
-                  <p>Record audio using the microphone and save it as a sound file, create a visualisation similar ot what we did in 6.1.2. The recording is stopped/started whenever the user presses a keyboard button.</p>
+                  <p>Record audio using the microphone, create a visualisation similar ot what we did in 6.1.2.</p>
                   <script type="text/p5" src="09.js" data-autoplay></script>
             </div>
+
+            
             
             <div>
                   <h3>6.1.5 Sound Synthesis</h3>
@@ -66,7 +70,8 @@
 
             <div>
                   <h3>Pixels</h3>
-                  <p>Change a video at every frame by using the pixel data. Here is an example code which use the pixel array to manipulate the colors of an image according to mouseX and mouseY position. Note how we access the R and B values of each pixel:</p>
+                  <p>Change a video at every frame by using the pixel data. Here is an example code which use the pixel array to manipulate the colors of an image according to mouseX and mouseY position.
+                   Note how we access the R and B values of each pixel:</p>
                   <script type="text/p5" src="04.js" data-autoplay></script>
             </div>
 
