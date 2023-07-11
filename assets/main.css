@@ -64,3 +64,12 @@ ul li {
 ul li span {
   color: #666;
 }
+
+a:hover {
+  color: #ec245e;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
