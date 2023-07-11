@@ -17,47 +17,54 @@
 
             <div>
                   <h3>1.1.2 Changing shades</h3>
-                  <p>Take the canvas you defined in the previous step and now change the shade for the background. <br> Note that the range of shade is between 0 - 255.</p>
+                  <p>Take the canvas you defined in the previous step and now change the shade for the background. <br> 
+                        <b class="pink">Note:</b> the range of shade is between 0 - 255.</p>
                   <script type="text/p5" src="02.js" data-autoplay></script>
             </div>
             <div>
-                  <p>Wait! ✋🏽🙈 why is the background solid? 🤔 <br> Remember that the draw function is called multiple times, therefore let's define the background within the body of the setup function (this is called just once when the program starts).</p>
+                  <p>Wait! ✋🏽🙈 why is the background solid? 🤔 <br> Remember that the draw function is called multiple times. Therefore, the background ends up with several yellow layers. Instead, we want a yellow canvas with transparency, so let's define the background within the body of the setup function to see what happens (this is called just once when the program starts).</p>
 
                   <div>
                         <h3>1.1.3 Changing shades 2</h3>
-                        <p>Take the canvas you defined in the previous step and now change the shade for the background within the setup function. <br> Note that the range of shade is between 0 - 255.</p>
+                        <p>Take the canvas you defined in the previous step and now change the shade for the background within the setup function. <br> <b class="pink">Note:</b> that the range of shade is between 0 - 255.</p>
                         <script type="text/p5" src="03.js" data-autoplay></script>
                   </div>
             </div>
 
             <h2> 1.2 Basic Geometry</h2>
+            <p>In this section we will learn how to draw different geometric figures, such as 🟨, 🟡, and more.</p>
             <div>
-                  <h3>1.2.1 N. points</h3>
-                  <p>Draw three points on the canvas using the following coordinates: Point 1 with x-coordinate 50, and y-coordinate 10, Point 1 with x-coordinate 10, and y-coordinate 90, and Point 1 with x-coordinate 90, and y-coordinate 90</p>
+                  <h3>1.2.1 Point</h3>
+                  <p>Draw three points on the canvas using the following coordinates:</p>
+                  <ul>
+                        <li><span>Point 1: x-coordinate 50 and y-coordinate 10.</span></li>
+                        <li><span>Point 2: x-coordinate 10 and y-coordinate 90.</span></li>
+                        <li><span>Point 3: x-coordinate 90, and y-coordinate 90.</span></li>
+                  </ul>
                   <script type="text/p5" src="04.js" data-autoplay></script>
             </div>
             <div>
-                  <h3>1.2.2 N. Lines</h3>
+                  <h3>1.2.2 Line</h3>
                   <p>Draw a line which cross the canvas starting from the top-left to the bottom-right of the canvas</p>
                   <script type="text/p5" src="05.js" data-autoplay></script>
             </div>
             <div>
-                  <h3>1.2.3 Rec - CENTER</h3>
+                  <h3>1.2.3 Rectangle - Center Mode</h3>
                   <p>Draw a rectangle using the CENTER rectangle mode, the rectangle is centred at (50, 50) with width 30, and height 30</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
             </div>
             <div>
-                  <h3>1.2.4 Rec - CORNER</h3>
+                  <h3>1.2.4 Recatangle - Corner Mode</h3>
                   <p>Draw a rectangle using the CORNER rectangle mode, the top-left corner is at (30, 30) with width 40 and height 50. Note that CORNER is the default rectangle mode</p>
                   <script type="text/p5" src="07.js" data-autoplay></script>
             </div>
             <div>
-                  <h3>1.2.5 Ellipse - CORNER</h3>
+                  <h3>1.2.5 Ellipse - Corner Mode</h3>
                   <p>Draw an ellipse using the CORNER ellipse mode, the ellipse should be centred at (50, 50) and has length 40 and height 40</p>
                   <script type="text/p5" src="08.js" data-autoplay></script>
             </div>
             <div>
-                  <h3>1.2.6 Ellipse - RADIUS and CENTER</h3>
+                  <h3>1.2.6 Ellipse - Radius and Center Modes</h3>
                   <p>Draw two ellipses, both are centred at (50, 50) and both have width 30 and height 30, however one is in CENTER mode while the other is in RADIUS mode. Why are they different? In RADIUS mode the 
                      width and height of the ellipse are actually half of the width and height, which is why we see the ellipse in RADIUS as twice the size of the one in CENTER mode. Note that CENTER mode is the default mode </p>
                   <script type="text/p5" src="09.js" data-autoplay></script>
