@@ -67,9 +67,11 @@ ul li span {
 
 a:hover {
   color: #ec245e;
+  text-decoration: underline;
 }
 
 a {
-  color: #666;
+  /* color: #666; */
   text-decoration: none;
+  color: #ec245e;
 }
