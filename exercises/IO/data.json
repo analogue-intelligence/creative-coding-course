@@ -1,0 +1,11 @@
+{
+    "name": "Alice",
+    "age": 25,
+    "city": "New York",
+    "fruits": [
+      { "name": "Apple", "quantity": 5 },
+      { "name": "Banana", "quantity": 3 },
+      { "name": "Orange", "quantity": 7 }
+    ]
+}
+  
