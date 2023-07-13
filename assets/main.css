@@ -66,12 +66,20 @@ ul li span {
 }
 
 a:hover {
-  color: #ec245e;
+  color: #666;
   text-decoration: underline;
 }
 
 a {
-  /* color: #666; */
   text-decoration: none;
+  color: #ec245e;
+}
+
+.title {
+  text-decoration: none;
+  color: #666; 
+}
+
+.title:hover {
   color: #ec245e;
 }
