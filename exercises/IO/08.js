@@ -7,6 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(400, 300);
+  userStartAudio();
   sound.play();
 
   //Creating reverb object and adding reverb to sound

@@ -1,6 +1,10 @@
 <html>
       <head>
-            <link rel="stylesheet" href="../assets/main.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+            <script src="https://unpkg.com/p5.js-svg@1.5.1"></script>
+
+            <link rel="stylesheet" href="../../assets/main.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
             <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
             <!-- Google tag (gtag.js) -->
@@ -12,28 +16,94 @@
 
                   gtag('config', 'G-M53C4CJQXG');
             </script>
+
+            <!-- Adding libraries -->
+            <script src="libraries/CCapture.js"></script>
+            <script src="libraries/webm-writer-0.2.0.js.js"></script>
+            <script src="libraries/download.js"></script>
+
+            <!-- Creating CCapture object -->
+            <script>
+                  var capturer = new CCapture({
+                  format: 'webm', //Output of capture - in this case webm
+                  framerate: 60,  //Defining framerate
+                  verbose: true   //By setting verbose to true you can see the process in the console
+                  })
+            </script>
+
       </head>
       <body>
             <h1>Summer school - Creative Coding</h1>
             <h2>Exercises week 1</h2>
-            
-            <h2>7.1 Exporting</h2>
+
+            <h2>7.1 Exporting Images</h2>
+
             <div>
-                  <h3>Export as Video</h3>
-                  <p>Learn how to export your p5.js sketch as a video file, including audio.</p>
-                  <script type="text/p5" src="01.js" data-autoplay></script>
+                  <h3>Exporting Images</h3>
+                  <ol>
+                        <li>Create a <code>keyPressed()</code> event so that when the 's' key is pressed. </li>
+                        <li>The image is saved using the <code>save()</code> function within the <code>keyPressed()</code> event.</li>
+                  </ol>
+                  <!-- <script type="text/p5" src="01.js" data-autoplay></script> -->
+                  <p>Note that the <code>saveCanvas()</code> function is only able to save files as 'png' or 'jpg'.</p>
             </div>
 
             <div>
-                  <h3>Export as High-Resolution/Vector Graphics PDF</h3>
-                  <p>Discover how to export your p5.js sketch as a high-resolution or vector graphics PDF in a desired format.</p>
-                  <script type="text/p5" src="02.js" data-autoplay></script>
+                  <h3>Exporting High-Resolution Images</h3>
+                  <ol>
+                    <li>Use the <code>pixelDensity()</code> function in the <code>setup()</code> function. If an argument greater than 1 is passed to the function, the resolution increases without changing the canvas size.</li>
+                    <li>Create a <code>keyPressed()</code> event so that when the 's' key is pressed, the current image is saved using the <code>save()</code> function.</li>
+                    <li>Refer to the <a href="https://p5js.org/reference/#/p5/save">save() function documentation</a> for more information. Note that you can save the canvas, an image, CSV, WAV, HTML, text, and HTML file using this function.</li>
+                  </ol>
+                  <p>Note that this method doesn't work together with editing pixels individually using <code>loadPixels()</code>.</p>
             </div>
 
             <div>
-                  <h3>6.1.5 Sound Exporting</h3>
-                  <p>Save an audio recording</p>
-                  <script type="text/p5" src="10.js" data-autoplay></script>
-            </div> 
+                  <h3>Exporting SVG</h3>
+                  <ol>
+                        <li>Add this line in your project's index.html file: <code>&lt;script src="https://unpkg.com/p5.js-svg@1.5.1"&gt;&lt;/script&gt;</code></li>
+                        <li>When creating a canvas in your sketch, add 'SVG' as the third argument - <code>createCanvas(100, 100, SVG)</code>.</li>
+                        <li>Export the image using the <code>save()</code> function and end the file name with '.svg'.</li>
+                  </ol>
+                  <!-- <script type="text/p5" src="05.js" data-autoplay></script> -->
+            </div>
+
+            <div>
+                  <h3>Exporting Vector Graphics PDF</h3>
+                  <p>Discover how to export your p5.js sketch as a high-resolution or vector graphics PDF in a desired format. Refer to <a href="https://stackoverflow.com/questions/23681325/convert-canvas-to-pdf">this Stack Overflow thread</a> for more information.</p>
+                  <!-- <script type="text/p5" src="02.js" data-autoplay></script> -->
+            </div>
+
+            <h2>Exporting Videos</h2>
+
+            <div>
+                  <h3>Capturing and Exporting a Simple Animation</h3>
+                  <p>
+                        <ol>
+                              <li>Download the <a href="https://github.com/spite/ccapture.js/">CCapture.js repository</a> from GitHub.</li>
+                              <li>Add all contents of the 'src' folder in the repository to your libraries folder in the project directory.</li>
+                              <li>Link the libraries in the HTML file by adding them to the index.html file. The libraries to add are 'CCapture.js', 'webm-writer-0.02.0.js', and 'download.js'.</li>
+                              <pre><code>&lt;script src="path/to/CCapture.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/webm-writer-0.02.0.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/download.js"&gt;&lt;/script&gt;</code></pre>
+                              <li>Create a <code>CCapture</code> object in the HTML file:</li>
+                              <pre><code>&lt;script&gtvar capturer = new CCapture({ format: 'webm', framerate: 60, verbose: true});&lt;/script&gt</code></pre>
+                              <li>Start the capture at the beginning of the <code>draw()</code> function when <code>frameCount == 1</code>:</li>
+                              <pre><code>if (frameCount == 1) {
+  capturer.start();
+}</code></pre>
+                              <li>During the animation, capture frames using <code>capturer.capture(canvas)</code>. Stop the capture and save the recording when <code>frameCount == 60</code>:</li>
+                              <pre><code>if (frameCount < 60) {
+  capturer.capture(canvas);
+} else if (frameCount == 60) {
+  capturer.stop();
+  capturer.save();
+}</code></pre>
+                              <li>View the console to see the frames being recorded while the capturer is running.</li>
+                        </ol>
+                  </p>
+                  <script></script>
+                  <br> <b class="pink">Note:</b> You do not have to use 'frameCount' to determine when to stop the animation, any variable can be used but this depends on the context of your program.
+            </div>
       </body>
 </html>

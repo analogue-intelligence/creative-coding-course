@@ -1,0 +1,224 @@
+<html>
+      <head>
+            <link rel="stylesheet" href="../../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+            <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-M53C4CJQXG');
+            </script>
+      </head>
+      <body>
+            <h1>Summer school - Creative Coding</h1>
+            <h2>Exercises week 1</h2>
+
+      <p>We will be using the example artwork in 'Assignment example: Composition VII (1917) by Theo van Doesburg'. The artwork will be exported in a multitude of different ways to showcase how it is possible to export using P5JS.</p>
+
+      <h2>7.1 Exporting Images</h2>
+            <div>
+                  <h3>Save Canvas</h3>
+                  <ol>
+                        <it>Create a variable when calling createCanvas()</it>
+                        <it>Save the canvas whenever the 's' key is pressed</it>
+                  </ol>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Save canvas</h3>
+                  <p>Create a canvas - feel free to take artistic liberty here. Then use the saveCanvas() function to save the canvas.</p>
+                  <ol>
+                        <it>hello</it>
+                        <it>bye</it>
+                  </ol>
+                  <!-- <script type="text/p5" src="13.js" data-autoplay></script> -->
+            </div>
+           
+
+      <!-- <div>
+            <h3></h3>
+            <p></p>
+            <script type="text/p5" src="01.js" data-autoplay></script>
+      </div> -->
+
+      <h3>Exporting Videos</h3>
+
+      <!-- <div>
+            <h3></h3>
+            <p></p>
+            <script type="text/p5" src="01.js" data-autoplay></script>
+      </div>
+
+      <div>
+            <h3></h3>
+            <p></p>
+            <script type="text/p5" src="01.js" data-autoplay></script>
+      </div> -->
+
+      <h3>Exporting Audio</h3>
+
+      <!-- <div>
+            <h3></h3>
+            <p></p>
+            <script type="text/p5" src="01.js" data-autoplay></script>
+      </div> -->
+      
+
+            
+
+
+
+     
+
+
+    
+            <!-- <h2>7.1 Exporting Images</h2>
+
+            
+
+            <div>
+                  <h3>Capturing and Exporting High-Resolution Images</h3>
+                  <p>
+                    <ol>
+                      <li>Create a canvas of size (100, 100)</li>
+                      <li>Draw a piece on the canvas</li>
+                      <li>Use the pixelDensity() function. If the an argument greater than 1 is passed to the function then the resolutions increases without changing the canvas size</li>  
+                      <li>Create a keyPressed() event such that whenever the 's' key is pressed the current image is saved using the save() funcion</li>
+                      <li>The following is more information on the save () function https://p5js.org/reference/#/p5/save - Note you can save the canvas, an image, csv, wav, html, text, and html file</li>
+                    </ol>
+                  </p>
+                  <script></script>
+                  <p>Note : However, this doesn't work together with editing pixels individually using loadPixels() .</p>
+            </div>
+
+            <div>
+                  <h3>Exporting SVG</h3>
+                  <p>
+                        <ol>
+                             <li><pre>Add this line in your projects index.html file: '<script src="https://unpkg.com/p5.js-svg@1.5.1"></script></pre></li>
+                             <li>When creating a canvas in your sketch, add 'SVG' as the third argument - createCanvas(100, 100, SVG);</li>
+                             <li>Export the image using the 'save()' fucntion and end the file name with '.svg'</li>
+                        </ol>
+                  </p>
+                  <script type="text/p5" src="05.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Export as Vector Graphics PDF</h3>
+                  <p>Discover how to export your p5.js sketch as a high-resolution or vector graphics PDF in a desired format. https://stackoverflow.com/questions/23681325/convert-canvas-to-pdf</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div>
+
+            <h2>Exporting Videos</h2>
+
+            <div>
+                  <h3>Export as Video</h3>
+                  <p>Learn how to export your p5.js sketch as a video file, including audio.</p>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>Capturing and Exporting High-Resolution Video</h3>
+                  https://github.com/spite/ccapture.js/ 
+                  <p>
+                    <li>
+                      <item>Create a canvas of size (400, 400)</item>
+                      <item>Draw some animated shapes or images on the canvas</item>
+                      <item>Add buttons labeled "Start Capture", "Stop Capture", and "Export Video"</item>
+                      <item>When the "Start Capture" button is clicked, start capturing the canvas as a high-resolution video</item>
+                      <item>When the "Stop Capture" button is clicked, stop capturing the video</item>
+                      <item>When the "Export Video" button is clicked, export the captured video as an MP4 file</item>
+                    </li>
+                  </p>
+                  <script></script>
+            </div>
+
+            <div>
+                  <h3>Capturing and Exporting a Simple Animation</h3>
+                  <p>
+                    <li>
+                      <item>Create a canvas of size (400, 400) with a simple animation (e.g., rotating square)</item>
+                      <item>Add a button labeled "Start Capture"</item>
+                      <item>When the button is clicked, start capturing the animation using CCapture.js</item>
+                      <item>After a certain duration, stop the capture and export the captured animation as a video file</item>
+                    </li>
+                  </p>
+                  <script></script>
+            </div>
+      
+            <div>
+                  <h3>Customizing Capture Settings</h3>
+                  <p>
+                    <li>
+                      <item>Create a canvas of size (400, 400) with an animated pattern or shape</item>
+                      <item>Add input fields for specifying the frame rate and export format</item>
+                      <item>Add a button labeled "Start Capture"</item>
+                      <item>When the button is clicked, start capturing the animation with the specified settings using CCapture.js</item>
+                      <item>After a certain duration, stop the capture and export the captured animation with the specified format</item>
+                    </li>
+                  </p>
+                  <script></script>
+            </div>
+                
+                
+                
+
+            <h2>Exporting Audio</h2>
+
+            
+
+            <div>
+                  <h3>6.1.5 Sound Exporting</h3>
+                  https://p5js.org/reference/#/p5.SoundFile/save
+                  <p>Save an audio recording</p>
+                  <script type="text/p5" src="10.js" data-autoplay></script>
+            </div>   -->
+
+            
+      </body>
+</html>
+
+
+
+
+<!-- CODE FOR HOW THR INDEX.HTML FILE SHOULD LOOK KLIKE WITH CCAPTURE -->
+<code>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Sketch</title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <script src="libraries/p5.min.js"></script>
+
+      <!-- Adding libraries -->
+      <script src="libraries/CCapture.js"></script>
+      <script src="libraries/webm-writer-0.2.0.js.js"></script>
+      <script src="libraries/download.js"></script>
+
+      <!-- Creating CCapture object -->
+      <script>
+            
+            var capturer = new CCapture({
+            format: 'webm', //Output of capture - in this case webm
+            framerate: 60,  //Defining framerate
+            verbose: true   //By setting verbose to true you can see the process in the console
+            })
+
+      </script>
+      </head>
+
+      <body>
+      <script src="sketch.js"></script>
+      </body>
+      </html>
+</code>

@@ -20,7 +20,7 @@
             <h2>6.1 Audio</h2>
             <div>
                   <h3>6.1.1 Play a Sound</h3>
-                  <p>Load and play a sound file in your sketch.</p>
+                  <p>Load and play a sound file in your sketch. Use the <code>userStartAudio()</code> functuon before playing the sound.</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
             </div>
             
@@ -47,11 +47,11 @@
             <div>
                   <h3>6.1.5 Sound Synthesis</h3>
                   <p>Generate sound using p5.js sound synthesis functions.
-                        <li>
-                              <item>Generate an oscillator object of type 'sine', frequency 440 and amplitude 0.5</item>
-                              <item>Whenever the mouse is pressed, the x coordinate of the mouse is mapped to a frequency range between 200, 2000 and the u coordinate is mapped to an amplitude of range between 0.2, 1. The osccilator is updated with the new freuqency and amplitude.</item>
-                              <item>When the mouse is released, the amplitude is set back to 0, 0.5</item>
-                        </li>
+                        <ol>
+                              <li>Generate an oscillator object of type 'sine', frequency 440 and amplitude 0.5</li>
+                              <li>Whenever the mouse is pressed, the x coordinate of the mouse is mapped to a frequency range between 200, 2000 and the u coordinate is mapped to an amplitude of range between 0.2, 1. The osccilator is updated with the new freuqency and amplitude.</li></item>
+                              <li>When the mouse is released, the amplitude is set back to 0, 0.5</li>
+                        </ol>
                   </p>
                   <script type="text/p5" src="10.js" data-autoplay></script>
             </div>
@@ -66,19 +66,13 @@
             <div>
                   <h3>Create an image</h3>
                   <p>
-                        <li>
-                              <item>Use the createImage function to create an image of height 50 and width 50, while the canvas is set to (100, 100) and set the background to black.</item>
-                              <item>With the use of the Pixels array of the image, change each pixel to a random colour. This means that the rgba values of each pixel are chnaged to a random value between 0 and 255</item>
-                              <item>Show the image on the canvas by using the image() function</item>
-                        </li>
+                        <ol>
+                              <li>Use the createImage function to create an image of height 50 and width 50, while the canvas is set to (100, 100) and set the background to black.</li>
+                              <li>With the use of the Pixels array of the image, change each pixel to a random colour. This means that the rgba values of each pixel are chnaged to a random value between 0 and 255</li>
+                              <li>Show the image on the canvas by using the image() function</li >
+                        </ol>
                   </p>
                   <script type="text/p5" src="12.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Save canvas</h3>
-                  <p>Create a canvas - feel free to take artistic liberty here. Then use the saveCanvas function to save the canvas.</p>
-                  <script type="text/p5" src="" data-autoplay></script>
             </div>
 
             <h2>Video</h2>
@@ -118,11 +112,11 @@
             <div>
                   <h3>Loading and Accessing CSV Data</h3>
                   <p>
-                    <li>
-                      <item>Load data from the 'data.csv' file using the loadTable() function</item>
-                      <item>Create a canvas of size (100, 100)</item>
-                      <item>Access the data in the CSV file and display it on the canvas using the text() function</item>
-                    </li>
+                    <ol>
+                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
+                      <li>Create a canvas of size (100, 100)</li>
+                      <li>Access the data in the CSV file and display it on the canvas using the text() function</li>
+                    </ol>
                   </p>
                   <script type="text/p5" src="17.js" data-autoplay></script>
             </div>
@@ -130,13 +124,13 @@
             <div>
                   <h3>Filtering and Sorting CSV Data</h3>
                   <p>
-                    <li>
-                      <item>Load data from the 'data.csv' file using the loadTable() function</item>
-                      <item>Create a canvas of size (400, 400)</item>
-                      <item>Filter the CSV data to include only rows where the 'population' is greater than 1,000,000</item>
-                      <item>Sort the filtered data based on the 'population' in descending order</item>
-                      <item>Display the filtered and sorted data on the canvas using the text() function</item>
-                    </li>
+                    <ol>
+                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
+                      <li>Create a canvas of size (400, 400)</li>
+                      <li>Filter the CSV data to include only rows where the 'population' is greater than 1,000,000</li>
+                      <li>Sort the filtered data based on the 'population' in descending order</li>
+                      <li>Display the filtered and sorted data on the canvas using the text() function</li>
+                    </ol>
                   </p>
                   <script type="text/p5" src="18.js" data-autoplay></script>
             </div>
@@ -144,13 +138,13 @@
             <div>
                   <h3>Adding Data to CSV File</h3>
                   <p>
-                    <li>
-                      <item>Load data from the 'data.csv' file using the loadTable() function</item>
-                      <item>Create a canvas of size (400, 400)</item>
-                      <item>Add a new row to the CSV data with the following information: city - 'London', country - 'United Kingdom', population - '8908081'</item>
-                      <item>Save the modified CSV data to a new file named 'modified_data.csv' using the saveTable() function</item>
-                      <item>Display the modified data on the canvas using the text() function</item>
-                    </li>
+                    <ol>
+                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
+                      <li>Create a canvas of size (400, 400)</li>
+                      <li>Add a new row to the CSV data with the following information: city - 'London', country - 'United Kingdom', population - '8908081'</li>
+                      <li>Save the modified CSV data to a new file named 'modified_data.csv' using the saveTable() function</li>
+                      <li>Display the modified data on the canvas using the text() function</li>
+                    </ol>
                   </p>
                   <script type="text/p5" src="19.js" data-autoplay></script>
             </div>
@@ -158,11 +152,11 @@
             <div>
                   <h3>Extracting data from a JSON file</h3>
                   <p>
-                        <li>
-                              <item>Load data from a the 'data.json' file using the loadJSON() function</item>
-                              <item>Create a canvas of size (100, 100), then create variables to hold the 'name', 'age' and 'city data in the JSON file</item>
-                              <item>Display all the data you have obtained from the JSON file using the text() function</item>
-                        </li>
+                        <ol>
+                              <li>Load data from a the 'data.json' file using the loadJSON() function</li>
+                              <li>Create a canvas of size (100, 100), then create variables to hold the 'name', 'age' and 'city data in the JSON file</li>
+                              <li>Display all the data you have obtained from the JSON file using the text() function</li>
+                        </ol>
                   </p>
                   <script type="text/p5" src="13.js" data-autoplay></script>
             </div>
@@ -179,12 +173,12 @@
             <div>
                   <h3>Modifying JSON Data</h3>
                   <p>
-                    <li>
-                      <item>Load data from the 'data.json' file using the loadJSON() function</item>
-                      <item>Create a canvas of size (100, 100)</item>
-                      <item>Modify the JSON data by changing the 'name' to 'John Doe' and 'age' to 30</item>
-                      <item>Save the modified JSON data to a file named 'modified_data.json' using the saveJSON() function</item>
-                    </li>
+                    <ol>
+                      <li>Load data from the 'data.json' file using the loadJSON() function</li>
+                      <li>Create a canvas of size (100, 100)</li>
+                      <li>Modify the JSON data by changing the 'name' to 'John Doe' and 'age' to 30</li>
+                      <li>Save the modified JSON data to a file named 'modified_data.json' using the saveJSON() function</li>
+                    </ol>
                   </p>
                   <script type="text/p5" src="15.js" data-autoplay></script>
             </div>

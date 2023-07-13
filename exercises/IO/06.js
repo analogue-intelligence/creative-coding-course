@@ -7,5 +7,6 @@ function preload() {
 
 function setup() {
   createCanvas(100, 100);
+  userStartAudio();
   sound.play();
 }

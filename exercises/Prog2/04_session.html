@@ -14,6 +14,7 @@
             </script>
       </head>
       <body>
+
             <h1>Summer school - Creative Coding</h1>
             <h2>Exercises week 1</h2>
             
@@ -21,33 +22,32 @@
             <div>
                   <h3>4.1.1 Label data types</h3>
                   <p>Create variables for the following data and add a comment which corresponds to the data type of the data: 
-                        "Emily", 8, '!', 8.1, 0.01, true, "False", 23.0</p>
+                       <br> "Emily", 8, '!', 8.1, 0.01, true, "False", 23.0</p>
                   <script type="text/p5" src="10.js" data-autoplay></script>
             </div>
 
             <h2>4.2 Functions</h2>
             <div>
                   <h3>4.2.1 Creating a function</h3>
-                  <p>Create a function called 'drawEllipse' which takes as arguments, 'posX' - the x position of the circle
+                  <p>Create a function called <code>drawEllipse()</code> which takes as arguments, 'posX' - the x position of the circle
                         'posY' - the y-position of the circle, 'w' - the width of the circle, 'l' - the length of the circle, 'r' - the red colour of the circle, 
-                        'b' - the blue colour of the circle, and 'g' - the green colour of the circle. Use the drawCircle function to create multiple different circles in the 'draw()' function. 
+                        'b' - the blue colour of the circle, and 'g' - the green colour of the circle. Use the <code>drawEllipse()</code> function to create multiple different circles in <code>draw().</code>
                   </p>
                   <script type="text/p5" src="01.js" data-autoplay></script>
-                  <p>Functions have two main properties - MODULARITY and REUSABILITY - here we can see how the function is reusable, as we can create multiple different circles using the same function</p>
+                  <p>Functions have two main properties - MODULARITY and REUSABILITY - here we can see how the function is reusable, as we can create multiple different circles using the same function.</p>
             </div>
 
             <div>
                   <h3>4.2.2 Function Return</h3>
-                  <p>Create a function called 'getArea' which takes as parameters 'w' for width and 'h' for height and returns the product of the values - the area.</p>
+                  <p>Create a function called <code>getArea()</code> which takes as parameters 'w' for width and 'h' for height and returns the product of the values - the area.</p>
                   <script type="text/p5" src="02.js" data-autoplay></script>
             </div>
 
             <div>
                   <h3>4.2.3 Map function</h3>
-                  <p>We want the return values for the getArea function to be between the range 0 and 255, initially the range of the area function is between 0 - maxArea since that is the maximum area on screen. Modify the getArea function by adding another parameter called 'maxArea' which is the value of the width*height of the screen. 
-                        Use the 'map' function to change the range. 
-
-                        For more information on the map function go here: https://p5js.org/reference/#/p5/map
+                  <p>We want the return values for the <code>getArea()</code> function to be between the range 0 - 255, initially the range of the area function is between 0 and the maximum area of the canvas (width*height). Modify the <code>getArea()</code> function by adding another parameter called 'maxArea' which is the value of width*height of the canvas. 
+                        Use the 'map' function to change the range from 0 - maxArea to 0 - 255. 
+                        <br>For more information on the <a href="https://p5js.org/reference/#/p5/map"> map function go here</a>
                   </p>
                   <script type="text/p5" src="03.js" data-autoplay></script>
             </div>
@@ -55,10 +55,10 @@
             <div>
                   <h3>4.2.4 Function Modularity</h3>
                   <p>Use the 'drawEllipse' and 'getArea' function together now. We want to draw a rectangle and have the rectangle be a darker shade of blue depending on how small the area of the rectangle is. 
-                        To do this an ellipse can be defined as follows: drawRect(posX, posY, w, h, 0, 0, area(w, l, maxArea))
+                        To do this an ellipse can be defined as follows: <code>drawRect(posX, posY, w, h, 0, 0, area(w, l, maxArea))</code>.
                   </p>
                   <script type="text/p5" src="04.js" data-autoplay></script>
-                  <p>This is an example of MODULARITY since we are using different functions to perform different tasks. The drawEllipse function helped in creating the ellipse, while the getArea function helped in getting the area without having to use more lines of code</p>
+                  <p>This is an example of MODULARITY since we are using different functions to perform different tasks. The <code>drawEllipse()</code> function helped in creating the ellipse, while the <code>getArea()</code>> function helped in getting the area without having to use more redundant lines of code</p>
             </div>
 
             <div>
@@ -77,8 +77,9 @@
 
             <div>
                   <h3>4.3.1 Class Shape</h3>
-                  <p>Create a class called Shape, define a constructor which takes as parameters 'x', 'y', 'wid', 'len'</p>
+                  <p>Create a class called 'Shape', define a constructor which takes as parameters 'x', 'y', 'wid', 'len'</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
+                  <br> <b class="pink">Note:</b>
             </div>
 
             <!-- You might be wondering what’s going on with the code inside the Circle constructor. What does this mean?
@@ -90,7 +91,7 @@ This line of code says “set this instance’s x variable to the value of the l
 
             <div>
                   <h3>4.3.2 Class object</h3>
-                  <p>Now after creating the class, we want to create multiple objects from this class. Create objects shape1 and shape2, of the class Shape and give them any values you want. 
+                  <p>Now after creating the class, we want to create multiple objects from this class. Create objects 'shape1' and 'shape2', of the class 'Shape' and give them any values you want. 
                         So essentially we created a variable which can hold multiple values, try creating a rectangle using each shape.
                   </p>
                   <script type="text/p5" src="07.js" data-autoplay></script>
@@ -98,7 +99,7 @@ This line of code says “set this instance’s x variable to the value of the l
 
             <div>
                   <h3>4.3.3 Class Method</h3>
-                  <p>There is an easier way to create a rectangle using a class, this is done by using methods. Methods are functions which are defined within a class. Create a method within the class which is similar to the 'drawRect' function we created earlier. 
+                  <p>There is an easier way to create a rectangle using a class, this is done by using methods. Methods are functions which are defined within a class. Create a method within the class which is similar to the <code>drawRect()</code> function we created earlier. 
                         Then use this method to draw a rectangle.
                   </p>
                   <script type="text/p5" src="08.js" data-autoplay></script>
@@ -107,7 +108,7 @@ This line of code says “set this instance’s x variable to the value of the l
             <div>
                   <h3>4.3.4 Class Method 2</h3>
                   <p>The class shape is very general, can we use it to create more types of shapes? Yes we can. 
-                        We can also create a method which creates an ellipse, call the method drawEllipse and define it similarly to the drawRect function.
+                        <br>We can also create a method which creates an ellipse, call the method <code>drawEllipse()</code> and define it similarly to the <code>drawRect()</code> function.
                   </p>
                   <script type="text/p5" src="09.js" data-autoplay></script>
                   <p>Here we have seen how powerful classes can be, they take a while to get used but imagine them as a very generalised data type which also have their own functions. Classes are used in situations when you want to create a generalised object with some properties such as a particle system or vectors.</p>

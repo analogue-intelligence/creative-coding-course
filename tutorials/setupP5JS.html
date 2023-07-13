@@ -3,6 +3,8 @@
             <link rel="stylesheet" href="../assets/main.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
             <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+            <style> img {width: 50%; height:50%;}</style>
       </head>
       <body>
             <h1>Summer school - Creative Coding</h1>
@@ -13,12 +15,12 @@
                     <li>
                         <h3>Install Visual Studio Code</h3>
                         <p>Download and install Visual Studio Code from <a href="https://code.visualstudio.com/">here</a>.</p>
-                        
                     </li>
                     
                     <li>
                         <h3>Set up a project folder</h3>
                         <p>Create a new folder on your computer where you want to store your p5.js projects. Open Visual Studio Code and go to File -> Open Folder, and select the folder you just created.</p>
+                        <img src="Images/setup.png">
                     </li>
     
                     <li>
@@ -26,8 +28,12 @@
                         <p>In Visual Studio Code, we use extensions to enhance our development experience. Follow these steps to download the necessary extensions:</p>
                         <ol>
                           <li>Click on the square icon on the left sidebar or press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac) to open the Extensions view.</li>
-                          <li>Search for "p5.vscode" in the Extensions view search box and install the extension by Sam Lavigne.</li>
-                          <li>Search for "Live Server" in the Extensions view search box and install the extension by Ritwick Dey.</li>
+                          <li>Search for "p5.vscode" in the Extensions view search box and install the extension by Sam Lavigne.
+                            <img src="Images/p5Extension.png">
+                          </li>
+                          <li>Search for "Live Server" in the Extensions view search box and install the extension by Ritwick Dey.
+                            <img src="Images/lsExtension.png">
+                          </li>
                         </ol>
                         <p>The "p5.vscode" extension provides p5.js project templates and helpful snippets, while the "Live Server" extension allows you to run your p5.js sketches locally in a browser.</p>
                     </li>
@@ -48,11 +54,13 @@
                         <p>To simplify the creation of a p5.js project folder, you can use the "p5.vscode" extension:</p>
                         <ol>
                           <li>Press `Ctrl+Shift+p` (Windows/Linux) or `Cmd+Shift+p` (Mac) while in the directory which you want to create the project in.</li>
-                          <li>Search for 'Create p5.js project' and select it.</li>
-                          <li>Choose the folder where you want to create your p5.js project.</li>
-                          <li>Enter a name for your project and press Enter.</li>
+                          <li>Search for 'Create p5.js project' and select it.
+                            <br> <img src="Images/createProject.png">
+                          </li>
+                          <li>Choose the folder where you want to create your p5.js project and select it.</li>
                         </ol>
                         <p>The "p5.vscode" extension will automatically create the project folder structure for you. This files included in the newly created project are: index.html, sketch.js, style.css, jsconfig.json and a libraries folder.</p>
+                        <img src="Images/projectOverview.png">
                     </li>
                     <li>
                         <h3>Live Server</h3>
@@ -60,8 +68,12 @@
                         <ol>
                           <li>Open your p5.js project folder in Visual Studio Code.</li>
                           <li>Find the HTML file (e.g., index.html) and right-click on it.</li>
-                          <li>Select "Open with Live Server" from the context menu.</li>
-                          <li>A new browser tab will open, displaying your p5.js sketch.</li>
+                          <li>Select "Open with Live Server" from the context menu.
+                            <br> <img src="Images/lsOPen.png">
+                          </li>
+                          <li>A new browser tab will open, displaying your p5.js sketch.
+                            <br> <img src="Images/lsRunning.png">
+                          </li>
                         </ol>
                         <p>Whenever you make changes to your p5.js code and save the file, the browser will automatically refresh and show the updated sketch.</p>
                     </li>

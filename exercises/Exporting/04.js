@@ -47,10 +47,6 @@ let shapes = [
 
 function setup() {
     createCanvas(400, 400);
-
-    //Raising the pixel density here
-    pixelDensity(9);
-
     PIX_BLOCK = width / NUM_BLOCKS;
 
     // Add variables required for motion
@@ -105,11 +101,6 @@ function draw() {
 
     }
     );
-
-    //Saving the canvas
-    if (keyIsPressed && key === 's') {
-        saveCanvas('myArtwork', 'jpg');
-    }
 }
 
 function mouseClicked() {

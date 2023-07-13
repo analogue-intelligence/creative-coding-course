@@ -47,10 +47,6 @@ let shapes = [
 
 function setup() {
     createCanvas(400, 400);
-
-    //Raising the pixel density here
-    pixelDensity(9);
-
     PIX_BLOCK = width / NUM_BLOCKS;
 
     // Add variables required for motion
@@ -74,6 +70,11 @@ function setup() {
 }
 
 function draw() {
+
+    if (frameCount == 1) {
+        capturer.start();
+    }
+
     background(COLOR_BG);
 
     // General rendering settings 
@@ -106,9 +107,11 @@ function draw() {
     }
     );
 
-    //Saving the canvas
-    if (keyIsPressed && key === 's') {
-        saveCanvas('myArtwork', 'jpg');
+    if (frameCount < 60) {
+        capturer.capture(canvas);
+      } else if (frameCount == 60) {
+        capturer.stop();
+        capturer.save();
     }
 }
 
