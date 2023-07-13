@@ -46,11 +46,9 @@ let shapes = [
 
 
 function setup() {
-    createCanvas(400, 400);
 
-    //Raising the pixel density here
-    pixelDensity(9);
-
+    //Specify SVG when creating canvas
+    createCanvas(400, 400, SVG);
     PIX_BLOCK = width / NUM_BLOCKS;
 
     // Add variables required for motion
@@ -106,9 +104,9 @@ function draw() {
     }
     );
 
-    //Saving the canvas
+    //Saving the canvas, the file is downloaded as an SVG
     if (keyIsPressed && key === 's') {
-        saveCanvas('myArtwork', 'jpg');
+        save('myArtwork.svg');
     }
 }
 

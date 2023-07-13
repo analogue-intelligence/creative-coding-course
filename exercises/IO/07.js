@@ -8,6 +8,7 @@ function preload() {
 //Play sound
 function setup() {
   createCanvas(100, 100);
+  userStartAudio();
   sound.play();
   amplitude = new p5.Amplitude(); // create an object which is used to obtain the amplitude
 }

@@ -33,10 +33,10 @@
 
             <div>
                   <h3>3.1.3 Global/Local variables</h3>
-                  <p>Create a circle again using variables, however this time define the radius variable inside setup - in another function. </p>
+                  <p>Create a circle again using variables, however this time define the radius variable inside <code>setup()</code> - in another function. </p>
                   <script type="text/p5" src="02.js" data-autoplay></script>
                   <p>What happens? the radius variable is defined within another function and is said to be out of scope so it cannot be used. 
-                  Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally </p>
+                  Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally. </p>
             </div>
 
             <!-- <div>
@@ -47,8 +47,9 @@
 
             <div>
                   <h3>3.1.4 Draw Loop</h3>
-                  <p>Draw a circle using variables just as we did in the first exercise but with radius initialised as 0, however in this case increment the radius by 0.1 in the draw loop. What happens?</p>
+                  <p>Draw a circle using variables just as we did in the first exercise but with radius initialised as 0, however in this case increment the radius by 0.1 in the draw loop.</p>
                   <script type="text/p5" src="03.js" data-autoplay></script>
+                  <p>What is happening? Since <code>draw()</code> is an infinite loop, the radius is being incremented at every new frame which makes the circle seem to constantly enlarge.</p>
             </div>
 
             <div>
@@ -77,7 +78,7 @@
                   <h3>3.2.2 If-Else</h3>
                   <p>Do the same as above, however now when the mouse is on the top side of the screen draw the top side blue. </p>
                   <script type="text/p5" src="07.js" data-autoplay></script>
-                  <p>What happens in this case? Does the program draw the left side or the top when on the top-right section of the screen
+                  <p>What happens in this case? Does the program draw the left side or the top when on the top-right section of the screen.
                         To help visualise what is happening, try drawing two lines, one which goes through the horizontal center, while another which goes through the vertical center. The priority of which conditional statement is dependent on the order of the conditionals. </p>
             </div>
 
@@ -89,8 +90,9 @@
 
             <div>
                   <h3>3.2.4 Nested If</h3>
-                  <p>Using a nested if-statement, first check if the mouse is on the left side of the screen, and then check if the mouse is on the bottom side of the screen. If both conditions pass then colour the bottom-left part of the screen any colour. What do you think is the difference when both of the if-statements are not nested.</p>
+                  <p>Using a nested if-statement, first check if the mouse is on the left side of the screen, and then check if the mouse is on the bottom side of the screen. If both conditions pass then colour the bottom-left part of the screen any colour.</p>
                   <script type="text/p5" src="09.js" data-autoplay></script>
+                  <p> What do you think is the difference when neither if-statements is nested? In this case both conditionals will execute independant of each other.</p>
             </div>
             
             <div>
