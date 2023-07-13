@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100%;
   margin: 50;
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 300;
@@ -82,4 +83,10 @@ a {
 
 .title:hover {
   color: #ec245e;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
 }
