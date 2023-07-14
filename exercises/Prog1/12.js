@@ -1,5 +1,3 @@
-// Draw multiple lines across the screen using a for loop 
-
 let x = 0; // Initial position
 let y; // Vertical position of the line
 let halfLength = 40; // Vertical length to add to the line
@@ -11,8 +9,10 @@ function setup() {
 }
 
 function draw() {
-  
-  for(let i = 0; i <= width; i+=spacing){
+  let i = 0;
+
+  do {
     line(i, y - halfLength, i, y + halfLength);
-  }
+    i += spacing;
+  } while (i <= width);
 }
