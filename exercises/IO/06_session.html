@@ -1,5 +1,12 @@
+<!DOCTYPE html>
+
 <html>
       <head>
+            <!-- <script src="libraries/p5.min.js"></script>
+            <script src="libraries/p5.sound.min.js"></script>
+            <script src="libraries/p5.sound.min.js.map"></script>    -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
+            
             <link rel="stylesheet" href="../../assets/main.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
             <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
@@ -24,165 +31,6 @@
                   <h3>6.1.1 Play a Sound</h3>
                   <p>Load and play a sound file in your sketch. Use the <code>userStartAudio()</code> functuon before playing the sound.</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
-            </div>
-            
-            <div>
-                  <h3>6.1.2 Sound Visualization</h3>
-                  <p>Create an circle which is centered on the canvas, such that the radius of the circle changes between 10 - 200 as the amplitude of the sound changes </p>
-                  <script type="text/p5" src="07.js" data-autoplay></script>
-            </div>
-            
-            <div>
-                  <h3>6.1.3 Sound Effects</h3>
-                  <p>Apply reverb to the sound file, create a reverb object and set the reverb parameters to (<sound_variable>, 3, 2). 
-                     Whenever the mouse is pressed set the amplitude of the reverb to 10, and when the mouse is released 
-                        (using the mosuReleased() function) then set the amplitude of the reverb to 0. Note that one can chaneg the amplitude of a reverb object by doing reverb.amp(x) where x is the value of the amplitude.</p>
-                  <script type="text/p5" src="08.js" data-autoplay></script>
-            </div>
-            
-            <div>
-                  <h3>6.1.4 Sound Recording</h3>
-                  <p>Record audio using the microphone, create a visualisation similar ot what we did in 6.1.2.</p>
-                  <script type="text/p5" src="09.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>6.1.5 Sound Synthesis</h3>
-                  <p>Generate sound using p5.js sound synthesis functions.
-                        <ol>
-                              <li>Generate an oscillator object of type 'sine', frequency 440 and amplitude 0.5</li>
-                              <li>Whenever the mouse is pressed, the x coordinate of the mouse is mapped to a frequency range between 200, 2000 and the u coordinate is mapped to an amplitude of range between 0.2, 1. The osccilator is updated with the new freuqency and amplitude.</li></item>
-                              <li>When the mouse is released, the amplitude is set back to 0, 0.5</li>
-                        </ol>
-                  </p>
-                  <script type="text/p5" src="10.js" data-autoplay></script>
-            </div>
-
-            <h2>Image</h2>
-            <div>
-                  <h3>Open an image</h3>
-                  <p>Use the loadImage() function to load an image and then display the image on the canvas</p>
-                  <script type="text/p5" src="11.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Create an image</h3>
-                  <p>
-                        <ol>
-                              <li>Use the createImage function to create an image of height 50 and width 50, while the canvas is set to (100, 100) and set the background to black.</li>
-                              <li>With the use of the Pixels array of the image, change each pixel to a random colour. This means that the rgba values of each pixel are chnaged to a random value between 0 and 255</li>
-                              <li>Show the image on the canvas by using the image() function</li >
-                        </ol>
-                  </p>
-                  <script type="text/p5" src="12.js" data-autoplay></script>
-            </div>
-
-            <h2>Video</h2>
-            <div>
-                  <h3>Play a video</h3>
-                  <p>Play a video called 'test.mp4' on P5JS, and have the video loop infinitely.</p>
-                  <script type="text/p5" src="01.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Play/Pause video</h3>
-                  <p> When the mouse is pressed the video is paused and if pressed again the video is played. Note that P%JS does not keep track of of the current time after pausing the video, you cna use the time function for this.</p>
-                  <script type="text/p5" src="02.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Volume</h3>
-                  <p>Create a program which changes the volume of the video playing depending on where the mouse is moved. Note that volume() is a value between 0 (silent) and 1 (full volume)</p>
-                  <script type="text/p5" src="03.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Pixels</h3>
-                  <p>Change a video at every frame by using the pixel data. Here is an example code which use the pixel array to manipulate the colors of an image according to mouseX and mouseY position.
-                   Note how we access the R and B values of each pixel:</p>
-                  <script type="text/p5" src="04.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Recording videos</h3>
-                  <p>capture video from the user’s webcam and include it in the sketch</p>
-                  <script type="text/p5" src="05.js" data-autoplay></script>
-            </div>
-      
-            <h2>Data</h2>
-
-            <div>
-                  <h3>Loading and Accessing CSV Data</h3>
-                  <p>
-                    <ol>
-                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
-                      <li>Create a canvas of size (100, 100)</li>
-                      <li>Access the data in the CSV file and display it on the canvas using the text() function</li>
-                    </ol>
-                  </p>
-                  <script type="text/p5" src="17.js" data-autoplay></script>
-            </div>
-                
-            <div>
-                  <h3>Filtering and Sorting CSV Data</h3>
-                  <p>
-                    <ol>
-                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
-                      <li>Create a canvas of size (400, 400)</li>
-                      <li>Filter the CSV data to include only rows where the 'population' is greater than 1,000,000</li>
-                      <li>Sort the filtered data based on the 'population' in descending order</li>
-                      <li>Display the filtered and sorted data on the canvas using the text() function</li>
-                    </ol>
-                  </p>
-                  <script type="text/p5" src="18.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Adding Data to CSV File</h3>
-                  <p>
-                    <ol>
-                      <li>Load data from the 'data.csv' file using the loadTable() function</li>
-                      <li>Create a canvas of size (400, 400)</li>
-                      <li>Add a new row to the CSV data with the following information: city - 'London', country - 'United Kingdom', population - '8908081'</li>
-                      <li>Save the modified CSV data to a new file named 'modified_data.csv' using the saveTable() function</li>
-                      <li>Display the modified data on the canvas using the text() function</li>
-                    </ol>
-                  </p>
-                  <script type="text/p5" src="19.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Extracting data from a JSON file</h3>
-                  <p>
-                        <ol>
-                              <li>Load data from a the 'data.json' file using the loadJSON() function</li>
-                              <li>Create a canvas of size (100, 100), then create variables to hold the 'name', 'age' and 'city data in the JSON file</li>
-                              <li>Display all the data you have obtained from the JSON file using the text() function</li>
-                        </ol>
-                  </p>
-                  <script type="text/p5" src="13.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Working with JSON Arrays</h3>
-                  <p>Notice how the "fruite" data in the json file is different to the other data in the file, this is because "fruits" is an array and thus holds multiple data.
-                     Similarly to exercise ----- (Above), obtain the "fruits" data similarly to how the other data was obtained, however since you have an array now you need to iterate through the array to get the "name" and "quantity" for each fruit. 
-                     Display the data for each fruit similarly to how you did in exercise ---- (Above)
-                  </p>
-                  <script type="text/p5" src="14.js" data-autoplay></script>
-            </div>
-
-            <div>
-                  <h3>Modifying JSON Data</h3>
-                  <p>
-                    <ol>
-                      <li>Load data from the 'data.json' file using the loadJSON() function</li>
-                      <li>Create a canvas of size (100, 100)</li>
-                      <li>Modify the JSON data by changing the 'name' to 'John Doe' and 'age' to 30</li>
-                      <li>Save the modified JSON data to a file named 'modified_data.json' using the saveJSON() function</li>
-                    </ol>
-                  </p>
-                  <script type="text/p5" src="15.js" data-autoplay></script>
             </div>
       </body>
 </html>

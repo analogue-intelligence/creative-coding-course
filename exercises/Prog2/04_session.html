@@ -80,15 +80,10 @@
                   <h3>4.3.1 Class Shape</h3>
                   <p>Create a class called 'Shape', define a constructor which takes as parameters 'x', 'y', 'wid', 'len'</p>
                   <script type="text/p5" src="06.js" data-autoplay></script>
-                  <br> <b class="pink">Note:</b>
+                  <p> <br> <b class="pink">Note:</b> 
+                        When you're inside a class, the <code>this</code> keyword refers to the current instance of the class. It allows you to access and modify the instance's variables and methods. In the Circle constructor, for example, <code>this.x = x;</code> means "set this instance's <code>x</code> variable to the value of the local variable named <code>x</code>". The <code>this</code> keyword is useful for distinguishing between local variables and instance variables, making it clear which variable you are referring to within the class.
+                  </p>
             </div>
-
-            <!-- You might be wondering what’s going on with the code inside the Circle constructor. What does this mean?
-
-When you’re inside a class, the this keyword refers to the current instance. Variables without a this. before them are either temporary “local” variables (like the arguments passed into the Circle constructor) or “global” variables (like the width and height variables). For example, look at a specific line:
-
-this.x = x;
-This line of code says “set this instance’s x variable to the value of the local variable named x“. -->
 
             <div>
                   <h3>4.3.2 Class object</h3>
