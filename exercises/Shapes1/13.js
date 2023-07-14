@@ -1,9 +1,21 @@
 function setup() {
-    createCanvas(100,100);
-    background(255,255,0, 100);
+  createCanvas(100, 100);
+  background(220);
 }
 
 function draw() {
-    quad(38, 31, 86, 20, 69, 63, 30, 76);
-}
+  // Draw a curve using the curve() function
+  background(255);
+  stroke(0);
+  
+  
+  curve(mouseX, mouseY, 10, 50, 90, 50, 90, 90);
 
+  
+  // // Draw control points
+  ellipse(mouseX, mouseY, 10, 10);
+  ellipse(90, 90, 10, 10);
+ 
+  // Draw control lines
+  line(mouseX, mouseY, 90, 90);
+}
