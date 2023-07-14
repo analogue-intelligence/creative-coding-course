@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <link rel="stylesheet" href="../../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+            <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-M53C4CJQXG');
+            </script>
+      </head>
+      <body>
+            <header>
+                  <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+            </header>
+            <h2>Exercises: Canvas and Color</h2>
+
+            <h3>1.1 Basic Canvas</h3>
+            This section contains some exercises to get more familiar with the definition of the <a href="https://p5js.org/reference/#/p5/createCanvas" target="_blank" style="cursor:help">canvas</a> 🖼.
+            <div>
+                  <h3>1.1.1 Canvas</h3>
+                  <p>Create a yellow canvas with a height and width of 100 pixels.</p>
+                  <script type="text/p5" src="01-1.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>1.1.2 Changing shades</h3>
+                  <p>Take the canvas you defined in the previous step and now change the shade for the background. <br> 
+                        <b class="pink">Note:</b> the range of shade is between 0 - 255.</p>
+                  <script type="text/p5" src="02-1.js" data-autoplay></script>
+            </div>
+            <div>
+                  <p>Wait! ✋🏽🙈 why is the background solid? 🤔 <br> Remember that the draw function is called multiple times. Therefore, the background ends up with several yellow layers. Instead, we want a yellow canvas with transparency, so let's define the background within the body of the setup function to see what happens (this is called just once when the program starts).</p>
+
+                  <div>
+                        <h3>1.1.3 Changing shades 2</h3>
+                        <p>Take the canvas you defined in the previous step and now change the shade for the background within the setup function.</p>
+                        <script type="text/p5" src="03-1.js" data-autoplay></script>
+                  </div>
+            </div>
+            
+            <h3>2.1 Stroke and Fill</h3>
+            <div>
+                  <h3>2.1.1 Stroke and Fill</h3>
+                  <p>Create two circles, one circle with a black stroke and a white fill, and another circle with a white stroke and a black fill. The circles can be placed anywhere. <br> <b class="pink">Note:</b> the default stroke colour is black (0) and the default fill colour is white (255)</p>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+            </div>
+            <div>
+                  <h3>2.1.2 noStroke() and noFill()</h3>
+                  <p>Draw two circles which are placed anywhere, one has a grey fill but no stroke, while the other circle has a grey stroke but no fill</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>2.1.3 Stroke Weight</h3>
+                  <p>Draw two circles which are placed anywhere, one has a stroke weight of 1, and the other has a stroke weight of 4</p>
+                  <script type="text/p5" src="03.js" data-autoplay></script>
+            </div>
+
+            <h3>2.2 Colour</h3>
+            <p>This section contains some exercises to practice with using and defining colors 🌈 using P5*js.</p>
+            <div>
+                  <h3>2.2.1 Colour-Fill</h3>
+                  <p>Draw three circles which are placed anywhere, one is coloured red, another one is green and the last one is blue</p>
+                  <script type="text/p5" src="04.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>2.2.2 Colour-Stroke</h3>
+                  <p>Draw three circles which are placed anywhere, the fill of the circles is any colour you want but all circles have the same colour. One has stroke coloured red, another one has stroke coloured green and the last one has stroke coloured blue</p>
+                  <script type="text/p5" src="05.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>2.2.3 Alpha</h3>
+                  <p>Draw three circles of the same colour which are placed anywhere, one has an alpha value of 20, another one has an alpha value of 140, and another one has an alpha value of 255.
+                     Do not forget that the background should be added to the draw() function. 
+                  </p>
+                  <script type="text/p5" src="06.js" data-autoplay></script>
+            </div> 
+      </body>
+</html>
