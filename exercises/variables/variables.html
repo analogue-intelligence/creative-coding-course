@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+            <link rel="stylesheet" href="../../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+            <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-M53C4CJQXG');
+            </script>
+      </head>
+      <body>
+            <header>
+                  <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+            </header>
+            <h2>Exercises week 1</h2>
+            
+            <h2>3.1 Variables</h2>
+            <div>
+                  <h3>3.1.1 Shapes and Variables</h3>
+                  <p>Draw a circle such that the x-position, y-position and the radius are all defined using variables</p>
+                  <script type="text/p5" src="01.js" data-autoplay></script>
+            </div>
+            <div>
+                  <h3>Expressions</h3>
+                  <p>Now, let's define a variable <code>radius</code> with value 20, and draw again a circle such that the x-position, y-position, and radius are 50, 50, <code>radius</code>, respectively. <br> 😒 Nothing impressive, right? <br> Now let's increase the value of <code>radius</code> by 0.1.</p>
+                  <script type="text/p5" src="expr.js" data-autoplay></script>
+            </div>
+            <div>
+                  <h3>Expressions</h3>
+                  <p>Now, let's experiment a bit. Let's take the code from the previous task and move the background from the <code>draw</code> function to the <code>setup</code> function.</p>
+                  <script type="text/p5" src="expr2.js" data-autoplay></script>
+            </div>
+
+            <div>
+                  <h3>3.1.2 Constants</h3>
+                  <p>Draw a circle just as we did in the 3.1.1, however now set the radius as a constant. Try changing the value of radius after definition and see what happens.</p>
+                  <script type="text/p5" src="14.js" data-autoplay></script>
+                  <p>A constant is ... well constant, it cannot be redefined after initialisation.</p>
+            </div>
+
+            <div>
+                  <h3>3.1.3 Global/Local variables</h3>
+                  <p>Create a circle again using variables, however this time define the radius variable inside <code>setup()</code> - in another function. </p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+                  <p>What happens? the radius variable is defined within another function and is said to be out of scope so it cannot be used. 
+                  Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally. </p>
+            </div>
+
+            <!-- <div>
+                  <h3>Let vs Var</h3>
+                  <p>Similar to the previous exercise, define a circle again using variables</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div> -->
+
+      </body>
+</html>
