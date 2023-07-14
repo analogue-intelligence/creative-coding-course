@@ -12,7 +12,7 @@ function draw() {
   curve(mouseX, mouseY, 10, 50, 90, 50, 90, 90);
 
   
-  // // Draw control points
+  // // Draw control point
   ellipse(mouseX, mouseY, 10, 10);
   ellipse(90, 90, 10, 10);
  

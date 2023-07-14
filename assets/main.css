@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100%;
   margin: 50;
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 300;
@@ -66,12 +67,26 @@ ul li span {
 }
 
 a:hover {
-  color: #ec245e;
+  color: #666;
   text-decoration: underline;
 }
 
 a {
-  /* color: #666; */
   text-decoration: none;
   color: #ec245e;
+}
+
+.title {
+  text-decoration: none;
+  color: #666; 
+}
+
+.title:hover {
+  color: #ec245e;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
 }
