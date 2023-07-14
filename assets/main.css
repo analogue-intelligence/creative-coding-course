@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  margin: 50;
+  margin: 20px;
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 300;
   line-height: 1.6;
@@ -87,6 +87,6 @@ a {
 
 footer {
   position: fixed;
-  bottom: 1em;
+  bottom: 0.1em;
   width: 100%;
 }
