@@ -1,6 +1,6 @@
 let posX  = 50;
 let posY = 50;
-let radius = 30;
+let radius = 15;
 
 function setup() {
     createCanvas(100,100);

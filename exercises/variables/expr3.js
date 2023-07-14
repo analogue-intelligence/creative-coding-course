@@ -4,11 +4,11 @@ let edge = 10;
 
 function setup() {
     createCanvas(100,100);
+    background(255);
 }
 
 function draw() {
-    background(255);
-
+    
     rect(x, y, edge, edge);
     
     x += 0.2;
