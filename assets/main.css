@@ -90,3 +90,8 @@ footer {
   bottom: 1em;
   width: 100%;
 }
+
+.border {
+  border-color: #ec245e!important;
+  max-height: 220px;
+}
