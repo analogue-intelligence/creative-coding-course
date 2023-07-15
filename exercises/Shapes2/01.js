@@ -5,12 +5,12 @@ function setup() {
 
 function draw() {
 
-    stroke(255);
-    fill(0);
-    ellipse(30, 30, 30, 30);
-  
-    stroke(0);
-    fill(255);
-    ellipse(70, 70, 30, 30);
+    //Specify stroke here
+    //Specify fill here
+    //Draw ellipse here
+
+    //Specify stroke here
+    //Specify fill here
+    //Draw ellipse here
 }
 

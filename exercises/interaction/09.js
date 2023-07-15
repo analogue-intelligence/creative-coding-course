@@ -12,6 +12,5 @@ function setup() {
     stroke(255);
     fill(0);
 
-    // pmouseX and pmouseY refer to the previous point of mouseX and mouseY respectively in the frame before. 
-    line(pmouseX, pmouseY, mouseX, mouseY);
+    // pmouseX and pmouseY refer to the previous point of mouseX and mouseY respectively in the frame before. Draw the line here
   }
