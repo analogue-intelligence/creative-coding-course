@@ -19,7 +19,7 @@
             </header>
             
             <h2>Variables and Expressions</h2>
-            <div>
+            <div id="task1">
                   <h3>Shapes and Variables</h3>
                   <p>Draw a circle such that the x-position, y-position and the radius are all defined using variables. To achieve this you must define three variables <code>posX</code>, <code>posX</code>, and <code>radius</code>. The first two variables with an initial value of 50, and the latter 15. </p>
                   <script type="text/p5" src="01.js" data-autoplay></script>
@@ -29,9 +29,11 @@
                   <p> 😒 Nothing impressive, right? </p>
                   <p>Now, let's copy the code from the previous example and make a small change. After creating the circle, let's increase the value of the variable <code>radius</code> by a factor of 0.1.</p>
                   <script type="text/p5" src="expr.js" data-autoplay></script>
+                  <p>😲 What is happening? Since draw() is an infinite loop, the radius is being incremented at every new frame which makes the circle seem to constantly enlarge.</p>
             </div>
             <div>
                   <p>This is already more interesting. Let's keep experimenting 👩🏾‍🔬.</p>
+                  <h3>Movement 🏎️</h3>
                   <p>Draw a square with width 10 at the origin of the canvas (both x and y coordinates at 0). After drawing the square, increase the values of the <code>x</code> and <code>y</code> variables by a factor of 0.2, and 0.3, repsectively.</p>
                   <script type="text/p5" src="expr2.js" data-autoplay></script>
             </div>
@@ -43,17 +45,18 @@
 
             <div>
                   <h3>Constants</h3>
-                  <p>Draw a circle just as we did in the 3.1.1, however now set the radius as a constant. Try changing the value of radius after definition and see what happens.</p>
+                  <p>Draw a circle just as we did in the <a href="#task1">first task</a>, however now let's try to set the radius as a constant, and try changing the value of the radius after definition and see what happens.</p>
                   <script type="text/p5" src="14.js" data-autoplay></script>
-                  <p>A constant is ... well constant, it cannot be redefined after initialisation.</p>
+                  <p> ‼️ 🚨 A constant is ... well constant, it cannot be redefined after initialisation.</p>
             </div>
 
             <div>
                   <h3>Global/Local variables</h3>
-                  <p>Create a circle again using variables, however this time define the radius variable inside <code>setup()</code> - in another function. </p>
+                  <p>Create a circle again using variables, however this time define the radius variable inside the <code>setup()</code> function - in another function. </p>
                   <script type="text/p5" src="02.js" data-autoplay></script>
-                  <p>What happens? the radius variable is defined within another function and is said to be out of scope so it cannot be used. 
-                  Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally. </p>
+                  <p> 🤔 What happened? </p>
+                  <p>The radius variable is defined within the <code>setup()</code> function and therefore its scope is only within such function. This means that outside this function, the variable <code>radius</code> doesn't exist and so it cannot be used ☹️.</p>
+                  <p>Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally. </p>
             </div>
 
             <!-- <div>
@@ -61,6 +64,5 @@
                   <p>Similar to the previous exercise, define a circle again using variables</p>
                   <script type="text/p5" src="02.js" data-autoplay></script>
             </div> -->
-
       </body>
 </html>
