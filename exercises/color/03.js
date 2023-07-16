@@ -5,10 +5,10 @@ function setup() {
 
 function draw() {
   
-    strokeWeight(1);
-    ellipse(50, 25, 30, 30);
-  
-    strokeWeight(4);
-    ellipse(50, 75, 30, 30);
+    //Specify stroke weight here
+    //Draw ellipse here
+
+    //Specify stroke weight here
+    //Draw ellipse here
 }
 
