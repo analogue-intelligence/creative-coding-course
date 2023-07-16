@@ -1,5 +1,5 @@
-//Specify CENTER mode
+//Specify RADIUS mode
 //Draw ellipse
 
-//Specify RADIUS mode
+//Specify CENTER mode
 //Draw ellipse
