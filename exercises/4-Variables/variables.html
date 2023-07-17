@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="../../assets/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+            <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+            <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-M53C4CJQXG');
+            </script>
+      </head>
+      <body>
+            <header>
+                  <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+            </header>
+            
+            <h2>Variables and Expressions</h2>
+
+            <div id="task1">
+                  <h3>Shapes and Variables</h3>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>Draw a circle such that the x-position, y-position, and the radius are all defined using variables. To achieve this, you must define three variables <code>posX</code>, <code>posY</code>, and <code>radius</code>. The first two variables should have an initial value of 50, and the latter should have a value of 15.</p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="01.js" data-autoplay></script>
+                        </div>
+                        <div class="col-sm-4">
+                              <p>Expected Output:</p> <img class="border" src="images/01.png">
+                        </div>
+                  </div>
+            </div>
+
+            <div>
+                  <h3>Expressions</h3>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>😒 Nothing impressive, right?</p>
+                              <p>Now, let's copy the code from the previous example and make a small change. After creating the circle, let's increase the value of the variable <code>radius</code> by a factor of 0.1.</p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="expr.js" data-autoplay></script>
+                        </div>
+                        <div class="col-sm-4">
+                              <p>Expected Output:</p> <img class="border" src="images/02.png">
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>😲 What is happening? Since <code>draw()</code> is an infinite loop, the radius is being incremented at every new frame, which makes the circle seem to constantly enlarge.</p>
+                        </div>
+                  </div>
+            </div>
+
+            <div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>This is already more interesting. Let's keep experimenting 👩🏾‍🔬.</p>
+                        </div>
+                  </div>
+                  <h3>Movement 🏎️</h3>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>Draw a square with a width of 10 at the origin of the canvas (both x and y coordinates at 0). After drawing the square, increase the values of the <code>x</code> and <code>y</code> variables by a factor of 0.2 and 0.3, respectively.</p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="expr2.js" data-autoplay></script>
+                        </div>
+                        <div class="col-sm-4">
+                              <p>Expected Output:</p> <img class="border" src="images/03.png">
+                        </div>
+                  </div>
+            </div>
+
+            <div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>Another experiment 🧪, let's copy the code from the previous task and move the <code>background(...);</code> from the <code>draw()</code> function to the <code>setup()</code> function.</p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="expr3.js" data-autoplay></script>
+                        </div>
+                        <div class="col-sm-4">
+                              <p>Expected Output:</p> <img class="border" src="images/04.png">
+                        </div>
+                  </div>
+            </div>
+
+            <div>
+                  <h3>Constants</h3>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>Draw a circle just as we did in the <a href="#task1">first task</a>, however now let's try to set the radius as a constant, and try changing the value of the radius after definition and see what happens.</p>
+                         </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="14.js" data-autoplay></script>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p> ‼️ 🚨 A constant is ... well constant, it cannot be redefined after initialisation.</p>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-sm-8">
+
+                  </div>
+            </div>
+
+            <div>
+                  <h3>Global/Local variables</h3>
+
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p>Create a circle again using variables, however this time define the radius variable inside the <code>setup()</code> function - in another function. </p>
+                        </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <script type="text/p5" src="02.js" data-autoplay></script>
+                        </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-sm-8">
+                              <p> 🤔 What happened? </p>
+                              <p>The radius variable is defined within the <code>setup()</code> function and therefore its scope is only within such function. This means that outside this function, the variable <code>radius</code> doesn't exist and so it cannot be used ☹️.</p>
+                              <p>Variables defined outside of any function are said to be globally defined, while variables defined within a function or {} braces (a block) are said to be defined locally. </p>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- <div>
+                  <h3>Let vs Var</h3>
+                  <p>Similar to the previous exercise, define a circle again using variables</p>
+                  <script type="text/p5" src="02.js" data-autoplay></script>
+            </div> -->
+      </body>
+</html>

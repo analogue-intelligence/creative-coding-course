@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M53C4CJQXG');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+    </header>
+
+    <h2>Exercises week 1</h2>
+
+    <div>
+        <h3>3.2.6 While loop</h3>
+        <p>Using a while loop, draw lines across the screen. As a hint, define the spacing between the lines using a variable and also the condition in the while loop should include the total width of the screen so as to know when to stop iterating. Continuously increment a variable with the spacing and draw a line up until the width of the screen has been reached</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="11.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/11.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2.7 For loop</h3>
+        <p>Create the same program as the one in 3.2.6 using a for loop</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="13.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/13.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2.8 Do-while loop</h3>
+        <p>Create the same program as the one in 3.2.6 using a do-while loop</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="12.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/12.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2.9 Grid</h3>
+        <p>Create a grid using a nested for loop, to create the grid have the first for loop focus on the rows and the second for loop focus on the columns (or vice-versa) and then create a rectangle at each row-column index</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="16.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/16.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2.6 Your First Grid</h3>
+        <p>Grids are an incredibly useful tool in the creative coding arsenal, helping you organize elements in the canvas. Pixels themselves are arranged in a grid indexed by a row and a column. For this exercise, draw a grid from the top left corner to the bottom right one using what you learned so far about the draw loop and conditionals. It should be possible to define the square size and the padding around the grid.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="14.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/14.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2.6 Break the Pattern with Random Shapes and Colors</h3>
+        <p>Breaking a pattern helps engaging the viewer. Try modifying the grid you defined in the previous exercise by randomly swapping shapes (e.g. draw a triangle instead of a circle) or colors.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="15.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/15.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
