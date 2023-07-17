@@ -1,6 +1,6 @@
-let posX  = 50;
-let posY = 50;
-let radius = 15;
+//Define posX variable here
+//Define posY variable here
+//Define radius variable here
 
 function setup() {
     createCanvas(100,100);
@@ -9,6 +9,6 @@ function setup() {
 function draw() {
     background(255);
     
-    ellipse(posX, posY, radius, radius);
+    //Draw the ellipse using the variables
 }
 

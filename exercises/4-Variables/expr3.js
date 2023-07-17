@@ -4,7 +4,7 @@ let edge = 10;
 
 function setup() {
     createCanvas(100,100);
-    background(255);
+    //background goes here
 }
 
 function draw() {

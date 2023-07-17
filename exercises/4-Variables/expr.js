@@ -11,5 +11,5 @@ function draw() {
     
     ellipse(posX, posY, radius, radius);
 
-    radius += 0.1;
+    //Increase the radius by 0.1
 }

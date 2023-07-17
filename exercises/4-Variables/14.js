@@ -9,7 +9,7 @@ function setup() {
 function draw() {
     background(255);
 
-    radius = 40;
+    //Re-define the value of the radius constant
     
     ellipse(posX, posY, radius, radius);
 }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M53C4CJQXG');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+    </header>
+
+    <h2>Exercises week 1</h2>
+
+    <h2>9. Arrays</h2>
+
+    <div>
+        <h3>9.1 Creating multiple variables</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Create 3 circles, each with an x-position of 50 and a radius of 25. Use variables for the values of
+                    xPos, yPos1, yPos2, and yPos3.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="01.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p> <br> <b class="pink">Note: </b> Is there any way you can reduce the number of variables? Yes, you
+                    can use an array. Create an array called yPos and define it as follows: <code>yPos = [20, 50, 80]</code>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>9.2 Array Indexing</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Replace the variables yPos1, yPos2, and yPos3 with the array yPos. Access an array element using
+                    indexing: <code>yPos[i]</code> where i is the index. <br> <b class="pink">Note: </b> The index i
+                    refers to the location in the array, and an array's indexing starts from 0. So, <code>yPos[0]</code>
+                    refers to the first element in the array yPos.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="02.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>9.3 Accessing arrays quickly</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Instead of writing individual circles for each element in the array, use a for loop to create a circle
+                    for each element in the yPos array. <br> <b class="pink">Note: </b> To get the length of an array,
+                    you can use <code>array.length</code>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="03.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>9.4 Foreach function</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Similar to example 5.1.3, use the forEach function to access every element in the yPos array.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="04.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>9.5 Sorting function</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Continuing from example 5.1.4, define the yPos array as follows: <code>yPos = [50, 80, 20]</code>.
+                    Sort the array using the sort() function before running the forEach loop on the yPos array.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="05.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>What happened? Visually, nothing changed, but the array has been sorted. If you print yPos before (in
+                    the setup() function) and after (in the draw() function) the sort, you should see the arrays in
+                    different orders. The sort() function is useful when you need to sort data.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M53C4CJQXG');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+    </header>
+    <h2>Exercises week 1</h2>
+
+    <h2>8. Object Oriented Programming</h2>
+
+    <div>
+        <h3>8.1 Class Shape</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Create a class called 'Shape' with a constructor that takes parameters 'x', 'y', 'wid', and 'len'</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="06.js"></script>
+            </div>
+            <!-- <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/shape.png">
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p> <br> <b class="pink">Note:</b> When you're inside a class, the <code>this</code> keyword refers to
+                    the current instance of the class. It allows you to access and modify the instance's variables and
+                    methods. In the Circle constructor, for example, <code>this.x = x;</code> means "set this
+                    instance's <code>x</code> variable to the value of the local variable named <code>x</code>". The
+                    <code>this</code> keyword is useful for distinguishing between local variables and instance
+                    variables, making it clear which variable you are referring to within the class.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>8.2 Class object</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Create objects 'shape1' and 'shape2' of the 'Shape' class with any desired values. Use these objects
+                    to create rectangles.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="07.js"></script>
+            </div>
+            <!-- <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/shape2.png">
+            </div> -->
+        </div>
+    </div>
+
+    <div>
+        <h3>8.3 Class Method</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Create a method within the 'Shape' class that is similar to the <code>drawRect()</code> function. Use
+                    this method to draw a rectangle.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="08.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>8.4 Class Method 2</h3>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>The 'Shape' class is very general. Can we use it to create more types of shapes? Yes, we can. We can
+                    also create a method called <code>drawEllipse()</code> within the 'Shape' class and define it
+                    similarly to the <code>drawRect()</code> function.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="09.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/02.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Here we have seen how powerful classes can be. They take a while to get used to, but imagine them as a
+                    very generalized data type which also has its own functions. Classes are used in situations when you
+                    want to create a generalized object with some properties, such as a particle system or vectors.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

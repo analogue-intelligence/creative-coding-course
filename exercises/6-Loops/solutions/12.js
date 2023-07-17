@@ -1,18 +1,21 @@
-let x = 0; // Initial position
-let y; // Vertical position of the line
-let halfLength = 40; // Vertical length to add to the line
-let spacing = 20; // Spacing between lines
+let numOfLines = 10; // Number of lines to draw
+let i = 0; // Counter variable
 
 function setup() {
   createCanvas(100, 100);
-  y = height / 2; // y is defined in setup() since the canvas has to be created first so as to use the height system variable 
 }
 
 function draw() {
-  let i = 0;
+  
+  let y = height / 2; // Vertical position of the lines
+  let halfLength = 40; // Vertical length to add to the lines
+  let spacing = width / numOfLines; // Spacing between lines
 
   do {
-    line(i, y - halfLength, i, y + halfLength);
-    i += spacing;
-  } while (i <= width);
+    let x = i * spacing; // Calculate the x position based on spacing
+
+    line(x, y - halfLength, x, y + halfLength); // Draw a vertical line
+    
+    i++; // Increment the counter variable
+  } while (i < numOfLines);
 }

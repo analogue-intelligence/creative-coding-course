@@ -3,7 +3,8 @@ let posY = 50;
 
 function setup() {
     createCanvas(100,100);
-    let radius = 30;
+
+    //Define the radius variable here
 }
 
 function draw() {

@@ -1,6 +1,6 @@
-let x = 0;
-let y = 0;
-let edge = 10;
+//Create variable for x coordinate
+//Create variable for y coordinate
+//Create variable to define the size of the square
 
 function setup() {
     createCanvas(100,100);
@@ -9,9 +9,9 @@ function setup() {
 function draw() {
     background(255);
 
-    rect(x, y, edge, edge);
+    //Draw square
     
-    x += 0.2;
-    y += 0.3;
+    //Increase x by 0.2
+    //Increase y by 0.3
 }
 
