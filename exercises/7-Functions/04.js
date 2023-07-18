@@ -19,8 +19,9 @@ function draw() {
 
     let maxArea = width*height;
     
-    drawEllipse(50, 50, 100, 30, 0, 0, getArea(100, 30, maxArea));
-    drawEllipse(70, 50, 70, 70, 0, 0, getArea(70, 70, maxArea));
-    drawEllipse(30, 60, 20, 90, 0, 0, getArea(20, 90, maxArea));
+    //The colour of the circle should be based off the getArea function
+    //Draw ellipse 
+    //Draw ellipse
+    //Draw ellipse
 }
 

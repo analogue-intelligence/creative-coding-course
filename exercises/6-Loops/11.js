@@ -1,5 +1,5 @@
-let numOfLines = 10; // Number of lines to draw
-let i = 0; // Counter variable
+//Variable to define the number of lines to draw
+//Counter variable starting at 0
 
 function setup() {
   createCanvas(100, 100);
@@ -7,15 +7,14 @@ function setup() {
 
 function draw() {
   
-  let y = height / 2; // Vertical position of the lines
-  let halfLength = 40; // Vertical length to add to the lines
-  let spacing = width / numOfLines; // Spacing between lines
+  let y = 0// Variable for vertical position of the lines
+  let halfLength = 40; // Variable for vertical length to add to the lines
+  // Create variable called spacing - defined the spacing between lines
 
-  while (i < numOfLines) {
-    let x = i * spacing; // Calculate the x position based on spacing
+  // Create while loop 
+    // Calculate the x position based on spacing - 1*10, 2*10, 3*10, ....
 
-    line(x, y - halfLength, x, y + halfLength); // Draw a vertical line
+    // Draw a vertical line
     
-    i++; // Increment the counter variable
-  }
+    // Increment the counter variable
 }

@@ -10,8 +10,7 @@ function setup() {
 function draw() {
     background(255);
 
-    for(let i = 0; i < yPos.length; i++){
-        ellipse(xPos, yPos[i], radius, radius);
-    }
+    //Create for loop to access arrays quickly - the loop traverses each element in the yPos array
+        //Create an ellipse 
 }
 
