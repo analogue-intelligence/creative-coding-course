@@ -10,9 +10,7 @@ class Shape {
         rect(this.x, this.y, this.wid, this.len);
     }
 
-    drawEllipse(){
-        ellipse(this.x, this.y, this.wid, this.len);
-    }
+    //Create the drawEllipse() method
 }
 
 function setup() {
@@ -25,7 +23,7 @@ function draw() {
     let shape1 = new Shape(50, 50, 30, 30);
     let shape2 = new Shape(30, 30, 20, 20);
 
-    shape1.drawEllipse();
-    shape2.drawEllipse();
+    //Draw an ellipse using the shape1 object
+    //Draw an ellipse using the shape2 object
 }
 

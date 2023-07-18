@@ -6,9 +6,7 @@ class Shape {
       this.len = len;
     }
 
-    drawRect(){
-        rect(this.x, this.y, this.wid, this.len);
-    }
+    //Create the drawRect method
 }
 
 function setup() {
@@ -21,7 +19,7 @@ function draw() {
     let shape1 = new Shape(50, 50, 30, 30);
     let shape2 = new Shape(30, 30, 20, 20);
 
-    shape1.drawRect();
-    shape2.drawRect();
+    //Draw a rectangle using the shape1 object
+    //Draw a rectangle using the shape2 object
 }
 

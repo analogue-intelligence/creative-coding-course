@@ -1,5 +1,6 @@
 function getArea(w, h, maxArea){
     let area = w*h;
+    //Define the area using the map function
     area = map(area, 0, maxArea, 0, 255);
     return area;
 }

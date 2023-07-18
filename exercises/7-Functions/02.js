@@ -1,7 +1,4 @@
-function getArea(w, h){
-    let area = w*h;
-    return area;
-}
+//Create getArea() function
 
 function setup() {
     createCanvas(100,100);

@@ -1,9 +1,5 @@
-let yPos1 = 20;
-let yPos2 = 50;
-let yPos3 = 80;
 
-let xPos = 50;
-let radius = 25;
+//Create variables xPos, yPos1, yPos2, yPos3, and radius
 
 function setup() {
     createCanvas(100,100);
@@ -12,8 +8,8 @@ function setup() {
 function draw() {
     background(255);
 
-    ellipse(xPos, yPos1, radius, radius);
-    ellipse(xPos, yPos2, radius, radius);
-    ellipse(xPos, yPos3, radius, radius);
+    //Create first circle
+    //Create second circle
+    //Create third circle
 }
 

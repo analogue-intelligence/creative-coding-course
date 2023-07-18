@@ -10,6 +10,7 @@ function setup() {
 function draw() {
     background(255);
     
-    ellipse(posX, posY, radius, radius);
+    //uncomment this line
+    //ellipse(posX, posY, radius, radius);
 }
 

@@ -4,11 +4,8 @@ function setup() {
 
 function draw() {
     background(255);
-
-    let posX  = width/2;
-    let posY = height/2;
-    let radius = 10;
     
-    ellipse(posX, posY, radius, frameCount);
+    //Draw ellipse here
+    //ellipse(expression using width, expression using height, frameCount, 10)
 }
 

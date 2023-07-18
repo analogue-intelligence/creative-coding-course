@@ -4,14 +4,8 @@ function setup() {
 
 function draw() {
     background(255);
-
-    let str1 = "Emily"; // String
-    let int1 = 8; // Integer
-    let str2 = '!'; // String
-    let float1 = 8.1; // Float
-    let float2 = 0.01; // Float 
-    let bool1 = true; // Boolean
-    let str3 = "False"; // String
-    let float3 = 23.0; // Float 
+    
+    //Create variables as follows with the variable name (varName), the data ("data") and specify the data type as a comment
+    //let varName = "data" //datatype
 }
 

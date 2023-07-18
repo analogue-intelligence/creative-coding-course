@@ -1,11 +1,6 @@
-class Shape {
-    constructor(x, y, wid, len) {
-      this.x = x;
-      this.y = y;
-      this.wid = wid;
-      this.len = len;
-    }
-}
+//Create Shape class
+    //Define the constructor
+        //Create variables x, y, wid, and len
 
 function setup() {
     createCanvas(100,100);
@@ -14,6 +9,6 @@ function setup() {
 function draw() {
     background(255);
 
-    let shape = new Shape(50, 50, 30, 30);
+    //Create an object of the Shape class
 }
 
