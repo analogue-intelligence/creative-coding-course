@@ -8,5 +8,11 @@ function draw() {
   
     //Specify fill here
     //Draw ellipse here
+
+    //Specify fill here
+    //Draw ellipse here
+
+    //Specify fill here
+    //Draw ellipse here
 }
 
