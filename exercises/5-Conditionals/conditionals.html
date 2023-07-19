@@ -29,7 +29,9 @@
 
     <div>
         <!-- <h3>5.1 System Variables</h3> -->
-        <p>A system variable is a variable name that is predefined in the system. Draw an <code>ellipse</code> at the center of the canvas using the system variables <code><a href="https://p5js.org/reference/#/p5/height" target="_blank" style="cursor:help">height</a></code> (y-coordinate parameter), <code><a href="https://p5js.org/reference/#/p5/width" target="_blank" style="cursor:help">width</a></code> (x-coordinate parameter), <code><a href="https://p5js.org/reference/#/p5/frameCount" target="_blank" style="cursor:help">frameCount</a></code> (ellipse height parameter), and 10 (ellipse width parameter).</p>
+        <p>
+            System variables are predefined variables that provide useful information about the sketch environment. Your task is to use the system variables <code><a href="https://p5js.org/reference/#/p5/width" target="_blank" style="cursor:help">width</a></code> (representing the width of the browser window), <code><a href="https://p5js.org/reference/#/p5/height" target="_blank" style="cursor:help">height</a></code> (representing the height of the browser window), <code><a href="https://p5js.org/reference/#/p5/frameCount" target="_blank" style="cursor:help">frameCount</a></code> (representing the number of frames rendered since the sketch started), and a constant value of 50 (representing the ellipse width) to draw an ellipse at the center of the canvas with the height of the ellipse constantly growing with the frameCount.
+        </p>
         <div class="row">
             <div class="col-sm-8">
                 <script type="text/p5" src="04.js" data-autoplay></script>
@@ -73,7 +75,9 @@
 
     <div>
         <h3>5.3.2 If-Else</h3>
-        <p>Do the same as above; however, now when the mouse is on the top side of the screen, draw the top side blue.</p>
+        <p>
+            Modify the program in 5.3.1 to draw a blue rectangle on the top side of the screen when the mouse is positioned in the upper half of the canvas. 
+        </p>
         <div class="row">
             <div class="col-sm-8">
                 <script type="text/p5" src="07.js" data-autoplay></script>
@@ -87,7 +91,7 @@
 
     <div>
         <h3>5.3.3 Else</h3>
-        <p>Do the same as above again, and now if the mouse is not on the left and not at the top of the screen, then draw the bottom-right side of the screen green.</p>
+        <p>Expand on the previous program in 5.3.2 to draw a green rectangle on the bottom-right side of the screen when the mouse is neither on the left side nor on the top side of the canvas. </p>
         <div class="row">
             <div class="col-sm-8">
                 <script type="text/p5" src="08.js" data-autoplay></script>
@@ -101,7 +105,7 @@
 
     <div>
         <h3>5.3.4 Nested If</h3>
-        <p>Using a nested if-statement, first check if the mouse is on the left side of the screen, and then check if the mouse is on the bottom side of the screen. If both conditions pass, then color the bottom-left part of the screen any color.</p>
+        <p>In this exercise, you'll enhance the program to check if the mouse is on the left side of the screen first, and then check if it's on the bottom side. If both conditions pass, you should draw a red rectangle on the bottom-left side of the canvas. Use a nested if statement to accomplish this task. </p>
         <div class="row">
             <div class="col-sm-8">
                 <script type="text/p5" src="09.js" data-autoplay></script>
@@ -115,7 +119,7 @@
 
     <div>
         <h3>5.3.5 Boolean Operations</h3>
-        <p>Try to combine the two if-statements above using boolean operations (and, or, not). Also, try to create more conditional statements with the boolean operations.</p>
+        <p>Modify the program to check if the mouse is on the left side of the canvas AND the lower half of the screen using boolean operations. If both conditions are true, you should draw a red rectangle on the bottom-left side of the canvas</p>
         <div class="row">
             <div class="col-sm-8">
                 <script type="text/p5" src="10.js" data-autoplay></script>

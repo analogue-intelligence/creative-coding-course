@@ -1,18 +1,10 @@
+// Declare variables to be randomized
 
-// Define variables which will be randomised
-
-// Every time the mouse is pressed a random circle is created
-function mousePressed(){
-  // Randomise all of the properties of the circle, within the given ranges along with the colour of the circle
-  // x-position - (0, width)
-  // y-position - (0, height)
-  // radius - (0, 100)
-  // r - (0, 255)
-  // g - (0, 255)
-  // b - (0, 255)
-  
-  // Create randomised circle
+function mousePressed() {
+  // Randomize the properties of the shape, including size, position, and color
+  // Create a shape using the randomized variables
 }
+
 
 function setup() {
   createCanvas(100, 100);
