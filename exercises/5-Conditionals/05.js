@@ -14,3 +14,6 @@ function setup() {
 function draw() {
 
 }
+
+// Define mousePressed function such that every time the mouse is pressed a random circle is created
+// Randomize all properties of the circle: position (x, y), radius and color
