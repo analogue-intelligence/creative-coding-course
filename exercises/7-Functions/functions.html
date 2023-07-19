@@ -31,7 +31,6 @@
         <h3>7.1 Data Types</h3>
         <div class="row">
             <div class="col-sm-8">
-                <h4>7.1.1 Label data types</h4>
                 <p>Create variables for the following data and add comments indicating their corresponding data types:
                     <br>"Emily", 8, '!', 8.1, 0.01, true, "False", 23.0</p>
             </div>
@@ -71,14 +70,13 @@
         <h3>7.2.2 Function Return</h3>
         <div class="row">
             <div class="col-sm-8">
-                <h4>4.2.2 Function Return</h4>
                 <p>Create a function called <code>getArea()</code> that takes parameters 'w' for width and 'h' for height
                     and returns the product of the values - the area.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-8">
-                <script type="text/p5" src="02.js"></script>
+                <script type="text/p5" src="solutions/02.js"></script>
             </div>
             <!-- <div class="col-sm-4">
                 <p>Expected Output:</p> <img class="border" src="images/02.png">
@@ -87,14 +85,39 @@
     </div>
 
     <div>
-        <h3>7.2.3 Map function</h3>
+        <h3>7.2.3 Mapping the area to colour</h3>
         <div class="row">
             <div class="col-sm-8">
-                <h4>4.2.3 Map function</h4>
+                <p>
+                    Create a program that draws a centered rectangle on the canvas. The width of the rectangle is determined by the
+                    mouse's X position, and the height is determined by the mouse's Y position. The area of the rectangle is calculated by
+                    multiplying the X and Y positions of the mouse together.
+
+                    You will use a custom mapping function called mapArea(). This function takes the area of the rectangle as an 
+                    argument and maps it to a color value between 0 and 255. This colour value obtained from the function will be 
+                    used as the fill colour of the rectangle. Thus as the rectangle changes shape (and thus area), the colour also 
+                    changes depending on the size. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="11.js"></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/11.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>7.2.4 Map function</h3>
+        <div class="row">
+            <div class="col-sm-8">
                 <p>We want the return values for the <code>getArea()</code> function to be between the range 0 - 255.
                     Initially, the range of the area function is between 0 and the maximum area of the canvas
                     (width*height). Modify the <code>getArea()</code> function by adding another parameter called
-                    'maxArea' which represents the value of width*height of the canvas. Use the 'map' function to
+                    'maxArea' which represents the value of width*height of the canvas. Use the mapArea() function created in exercise 7.2.3 or use the 'map' function to
                     change the range from 0 - maxArea to 0 - 255.
                     <br>For more information on the <a href="https://p5js.org/reference/#/p5/map">map function, click
                             here</a>.</p>
@@ -111,10 +134,9 @@
     </div>
 
     <div>
-        <h3>7.2.4 Function Modularity</h3>
+        <h3>7.2.5 Function Modularity</h3>
         <div class="row">
             <div class="col-sm-8">
-                <h4>4.2.4 Function Modularity</h4>
                 <p>Use the 'drawEllipse' and 'getArea' functions together now. Draw a rectangle and have the rectangle be
                     a darker shade of blue depending on how small the area of the rectangle is.
                     To do this, define the ellipse as follows: <code>drawRect(posX, posY, w, h, 0, 0,
