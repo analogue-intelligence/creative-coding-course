@@ -5,11 +5,9 @@ function setup() {
   function draw() {
     background(255);
    
-    //if statement to check if the mouse is on the left side of the canvas AND mouse is on the lower half of the screen
-    if(mouseX <= width/2 && mouseY >= height/2){
-
-        //Draw a red rectangle on the bottom-left side of the canvas
-    }
+    // If statement to check if the mouse is on the left side of the canvas AND (&&) mouse is on the lower half of the screen
+    // If the mouse coordinates satisfy the condition, draw a red rectangle on the bottom-left side of the canvas
+    
     
     //Lines intersecting the center of the canvas
     line(0, height/2, width, height/2);
