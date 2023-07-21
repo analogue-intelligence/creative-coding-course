@@ -1,4 +1,4 @@
-// 1. Define variables for positioning elements of the grid
+// 1. Define variables to store the current row (col_id) and its position in the grid (posY)
 
 // 2. Define constants for square size and the percentage of the canvas size devoted to the grid
 
@@ -13,11 +13,11 @@ function setup() {
 
 function draw() {
 
-    // 4. Compute x and y position of grid element
+    // 4. Compute y position of grid element based on the current row_id
 
     // 5. Draw rectangle in desired position
 
-    // 6. Advance to the next square
+    // 6. Advance to the next square (update row_id)    
 
     // 7. Add a conditional to update variables if the square falls outside of the grid area
 }

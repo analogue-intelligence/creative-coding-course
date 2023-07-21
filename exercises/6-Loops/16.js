@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-    background(220);
+    background(0);
     
     // Nested for loop to draw the grid of rectangles
       // For each row

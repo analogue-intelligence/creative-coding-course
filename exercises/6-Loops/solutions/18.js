@@ -1,17 +1,16 @@
 // 1. Define variables for positioning elements of the grid
 let col = 0; // id of the column
-let row = 0; // id of the row
-let posX, posY;
+let posX;
+
 
 // 2. Define constants for square size and the percentage of the canvas size devoted to the grid
-const SIZE = 10;
+const SIZE = 50;
 const PADDING_FACTOR = 0.3;
 
-// 3. Define and initialize variables for number of squares, size of the grid, the padding and the spacing between elements    
 let num_squares, grid_size, padding, spacing;
 
 function setup() {
-    createCanvas(100, 100);
+    createCanvas(700, 700);
     background(0);
 
     // 3. Define and initialize variables for number of squares, size of the grid, the padding and the spacing between elements    
@@ -25,10 +24,9 @@ function draw() {
 
     // 4. Compute x and y position of grid element
     posX = padding + col * (SIZE + spacing);
-    posY = padding + row * (SIZE + spacing);
 
     // 5. Draw rectangle in desired position
-    rect(posX, posY, SIZE, SIZE);
+    rect(posX, padding, SIZE, SIZE);
 
     // 6. Advance to the next square
     col++;
@@ -36,10 +34,5 @@ function draw() {
     // 7. Add a conditional to update variables if the square falls outside of the grid area
     if (posX + SIZE == padding + grid_size) {
         col = 0;
-        if (posY + SIZE == padding + grid_size) {
-            row = 0;
-        } else {
-            row++;
-        }
     }
 }
