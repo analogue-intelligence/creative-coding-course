@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+    <link rel="stylesheet" href="../../../assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M53C4CJQXG');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../../index.html" class="title">Summer school - Creative Coding</a></h1>
+    </header>
+
+    <h2>Solutions - 5.1 System Variables</h2>
+
+    <div>
+        <!-- <h3>5.1 System Variables</h3> -->
+        <p>
+            System variables are predefined variables that provide useful information about the sketch environment. Your task is to use the system variables <code><a href="https://p5js.org/reference/#/p5/width" target="_blank" style="cursor:help">width</a></code> (representing the width of the browser window), <code><a href="https://p5js.org/reference/#/p5/height" target="_blank" style="cursor:help">height</a></code> (representing the height of the browser window), <code><a href="https://p5js.org/reference/#/p5/frameCount" target="_blank" style="cursor:help">frameCount</a></code> (representing the number of frames rendered since the sketch started), and a constant value of 50 (representing the ellipse width) to draw an ellipse at the center of the canvas with the height of the ellipse constantly growing with the frameCount.
+        </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="04.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>5.2 Random</h2>
+        <p>Draw a shape with a random size, position, and color. Make sure that the shape is drawn whenever the mouse is pressed. Make sure to create variables for each random element of the shape.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="05.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/02.png">
+            </div>
+        </div>
+    </div>
+
+    <h2>5.3 Conditionals</h2>
+
+    <div>
+        <h3>5.3.1 If</h3>
+        <p>Draw the left side of the screen red whenever the mouse is on the left side of the screen.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="06.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/03.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>5.3.2 If-Else</h3>
+        <p>
+            Modify the program in 5.3.1 to draw a blue rectangle on the top side of the screen when the mouse is positioned in the upper half of the canvas. 
+        </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="07.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/04.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>5.3.3 Else</h3>
+        <p>Expand on the previous program in 5.3.2 to draw a green rectangle on the bottom-right side of the screen when the mouse is neither on the left side nor on the top side of the canvas. </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="08.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/05.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>5.3.4 Nested If</h3>
+        <p>In this exercise, you'll enhance the program to check if the mouse is on the left side of the screen first, and then check if it's on the bottom side. If both conditions pass, you should draw a red rectangle on the bottom-left side of the canvas. Use a nested if statement to accomplish this task. </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="09.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/06.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>5.3.5 Boolean Operations</h3>
+        <p>Modify the program to check if the mouse is on the left side of the canvas AND the lower half of the screen using boolean operations. If both conditions are true, you should draw a red rectangle on the bottom-left side of the canvas</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="10.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p>
+                <img class="border" src="../images/07.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
