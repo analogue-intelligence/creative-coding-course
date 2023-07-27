@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M53C4CJQXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M53C4CJQXG');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../index.html" class="title">Summer school - Creative Coding</a></h1>
+    </header>
+
+    <h2>Solutions loops exercises</h2>
+
+    <div>
+        <h3>6.1 Warm up: a grid without loops</h3>
+        <p>
+            Grids are an incredibly useful tool in the creative coding arsenal, helping you organize elements in the canvas. Pixels themselves are arranged in a grid indexed by a row and a column. 
+            For the exercises in this section, you will draw a grid from the top left corner to the bottom right one using what you learned so far about the draw loop and conditionals. 
+            It should be possible to define the square size and the padding around the grid.
+        </p>        
+    </div>
+
+    <div>
+        <h4>6.1.1 Horizontal 1D grid</h4>
+        <p>First, replicate squares along the horizonal direction.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="18.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/18.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4>6.1.2 Vertical 1D grid</h4>
+        <p>Now, replicate squares along the vertical direction.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="19.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/19.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4>6.1.3 Your first 2D grid</h4>
+        <p></p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="14.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/03.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>6.2 While loop</h3>
+        <p>Using a while loop, draw vertical lines across the screen. Define a variable to represent the number of lines and another variable called 'spacing' to determine the distance between each line. Iterate through each line in the loop and draw them on the canvas.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="11.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>6.3 For loop</h3>
+        <p>Create the same program as the one in 6.2 using a for loop. Try varying the length of the lines in the x or y directions!</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="13.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/13.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <h3>6.3 Do-while loop</h3>
+        <p>Create the same program as the one in 3.2.6 using a do-while loop</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="12.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/01.png">
+            </div>
+        </div>
+    </div> -->
+
+    <div>
+        <h3>6.4 Interactive moving shapes</h3>
+        <p>Create a dynamic visual of moving shapes along the x-axis. The shapes will be aligned along the y-axis all starting from the left side of the canvas and their movement will be influenced by the mouseX position. As the circles get closer to the bottom of the canvas, the movement will be faster.
+            You can use any shape you want, start with a circle and then play around with different types of shapes.
+        </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="17.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/17.png">
+            </div>
+        </div>
+    </div>    
+
+     <div>
+        <h3>6.5 Re-create grid using loops</h3>
+        <p>(Re)Create the grid in 6.1 using a nested for loop. To create the grid, have the first for loop focus on the rows and the second for loop focus on the columns (or vice-versa), and then create a rectangle at each row-column index.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="16.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/16.png">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>6.6 Break the pattern with random shapes and colors</h3>
+        <p>Breaking a pattern helps engaging the viewer. Try modifying the grid you defined in the previous exercise by randomly swapping shapes (e.g. draw a triangle instead of a circle) or colors.</p>
+        <div class="row">
+            <div class="col-sm-8">
+                <script type="text/p5" src="15.js" data-autoplay></script>
+            </div>
+            <div class="col-sm-4">
+                <p>Expected Output:</p> <img class="border" src="images/15.png">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
